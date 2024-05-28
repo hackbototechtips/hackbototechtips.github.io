@@ -3,4 +3,4 @@ Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.png$
 Disallow: /*.gif$
-Sitemap: sitemap.xml
+Sitemap: https://hackbototechtips.github.io/sitemap.xml
