@@ -1,0 +1,651 @@
+/*Body*/
+body{
+    font-family: Arial, sans-serif;
+    overscroll-behavior: none;
+    margin: 0;
+}
+p {
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+li {
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+/* Style */ 
+img {
+    border-radius: 15px;
+    transition: 0.2s;
+}
+a {
+    
+    transition: 0.2s;
+}
+/* Rounded corners */
+section, div {
+    border-radius: 15px;
+}
+/* Header */
+.logo {
+    float: left;
+    height: 100%;
+    width: 22%;
+}
+.headertext {
+    float: left;
+    width: 88%;
+    margin: auto;
+    text-align: center;
+    color: #0048FF;
+}
+header {
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+}
+/* Removes hover effect from header logo*/
+.logo img:hover{
+    box-shadow: none;
+}
+/* Sets the appearance of title text to match a heading 1 */
+.headertext p {
+    font-size: 2em; /* Adjust font size */
+    font-weight: bold; /* Make font bold */
+    padding: 0; /* Remove default padding */
+    line-height: 1.2; /* Adjust line height */
+    margin-top: 0.5em; /* Adjust top margin to create space */
+}
+img { /* Fixes images being too large */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header{
+    display: flex;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.nav a {
+    color: #ffffff;
+    background: #222222;
+    border: #222222;
+    border-style: solid;
+    display:inline-block;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin: 0px 8px;
+    align-items: center;
+}
+.nav a.active {
+    background-color: #000000;
+    color: #0048FF;
+    font-weight: bold;
+}
+.nav a:hover {
+    background-color: #000000;
+    color: #0048FF;
+    border: #0048FF;
+    border-style: solid;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+li.nav {
+    display: inline;
+}
+/* Responsive nav hamburger */
+.columnnav {
+    float: left;
+    width: 70%;
+}
+.columnclose {
+    float: right;
+    width: 30%;
+}
+.nav {
+    overflow: hidden;
+    top: 0;
+    border-radius: 0;
+}
+.nav .icon {
+    display: none;
+}
+@media screen and (max-width: 1480px) {
+    .nav a:not(:first-child)  {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+      margin: 0;
+      list-style-type: none;
+      padding: 16px 16px;
+      margin: 0px 8px;
+    }
+}
+  @media screen and (max-width: 1480px) {
+    .nav.responsive .icon {
+        float: right;
+        display: block;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.nav a {
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+/* Welcome page, display 3 articles and a page welcome*/ 
+.welcometext {
+    max-width: 85ch;
+    background-color: #0048FF;
+    color: #ffffff;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.welcometext p {
+    margin: 2%;
+}
+.welcometext h1 {
+    margin: 2%;
+    font-size: 200%;
+}
+.featuredarticle {
+    float: left;
+    width: 30%;
+    min-width: 40ch;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #0048FF;
+    box-sizing: border-box; 
+}
+.featuredarticle img {
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.featuredarticle a {
+    color: #0048FF;
+    background: #222222;
+    border: #222222;
+    display:inline-block;
+    padding: 16px 16px;
+}
+.featuredarticle a:hover{
+    background-color: #000000;
+    color: #0048FF;
+    border: #0048FF;
+    border-style: solid;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+/* Responsive layout - makes the columns stack on top of each other, removes images */
+@media screen and (max-width: 1480px) and (min-width: 700px) {
+    .featuredarticle {
+        margin: 2%, auto;
+        width: 45ch;
+    }
+    .featuredarticle img {
+        max-width: 20%;
+    }
+}
+/* Responsive layout - Makes featured articles fill screen, removes horizontal navigation bar. */
+@media screen and (max-width: 900px) {
+    .featuredarticle  {
+        width: 98%;
+        min-width: 0px;
+    }
+    /* Improves article appearance */
+    article {
+        margin: auto;
+        }
+}
+/* Article showcase pages */
+.pagewelcome {
+    max-width: 75ch;
+    background-color: #0048FF;
+    color: #ffffff;
+    padding: 2%;
+}
+#pc_tips {
+    background-image: url("pc_tips/old_pc.png");
+    background-repeat: repeat;
+    background-color: #0048FF;
+    background-position: right top;
+  }
+#download_centre {
+    background-image: url("download_centre/download_centre.png");
+    background-repeat: repeat;
+    background-color: #0048FF;
+    background-position: right center;
+}
+.articles {
+    background-color: #f5f5f5;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.articlerow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.articles h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+.articlecolumn {
+    float: left;
+    width: 22%;
+    min-width: 45ch;
+    margin: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #0048FF;
+    box-sizing: border-box; 
+}
+.articlecolumn img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.articlecolumn a {
+    color: #ffffff;;
+    background: #222222;
+    border: #222222;
+    border-style: solid;
+    display:inline-block;
+    padding: 8px 16px;
+}
+.articlecolumn a:hover{
+    background-color: #000000;
+    color: #0048FF;
+    border: #0048FF;
+    border-style: solid;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+/* Clearfix for .articles */
+.articles::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the columns stack on top of each other */
+@media screen and (max-width: 900px) {
+    .articlecolumn {
+        width: 100%;
+        margin: 2% auto;
+        min-width: 100%;
+    }
+    /* Makes aside hide on articles */
+    aside {
+        display: none;
+    }
+}
+/* Responsive layout - makes the images larger */
+@media screen and (max-width: 700px) {
+    .articlecolumn img {
+        max-width: 45%;
+    }
+}
+/* Article */
+article {
+    width: 68%;
+    margin-bottom: 80px;
+    margin-left: auto;
+}
+article h1 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+article img {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#imgdescription{
+    text-align: center;
+}
+.linkbutton {
+    margin-left: 40%;
+    display: block;
+    width: 15%;
+    background-color: #222222;
+    border: #222222;
+    border-style: solid;
+    display:inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    color: #ffffff;
+}
+.linkbutton:hover {
+    background-color: #000000;
+    color: #0048FF;
+    border: #0048FF;
+    border-style: solid;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+aside {
+    width: 29%;
+    position: fixed;
+    left: 0;
+    background-color: #000000;
+    color: #0048FF;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+aside a {
+    color: #ffffff;
+    background-color:#222222;
+    border-color: #000000;
+    border-style: solid;
+    display:inline-block;
+    width: 90%;
+    padding: 6px;
+    margin-left: 1%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+aside a:hover {
+    color: #0048FF;
+    border-color: #0048FF;
+    background-color: #000000;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+aside h2 {
+    margin: 3%;
+}
+
+/* Responsive- hide jump to section on short displays */
+@media screen and (max-height: 500px) {
+    aside {
+        display: none;
+    }
+    article {
+        margin: auto;
+        width: auto;
+        margin: 2%;
+    }
+}
+/* About and Contact */
+.about {
+    margin-top: 1%;
+    width: 49%;
+    float: left;
+    margin-bottom: 80px;
+}
+.about img {
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+.contact {
+    margin-top: 1%;
+    width: 49%;
+    background-color: #0048FF;
+    color: #ffffff;
+    float: left;
+    margin-bottom: 80px;
+}
+.contact p {
+    margin: 1%;
+}
+.contact p, .contact h2 {
+    text-align: center;
+}
+/* Contact Form */
+.contact-form {
+    margin: 1%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+.contact-form label {
+    font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 97%;
+    padding: 1%;
+    margin-bottom: 10px;
+    border: 2px solid #0048FF;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form input[type="submit"] {
+    min-width: fit-content;
+    width: 50%;
+    padding: 15px;
+    background-color: #0048FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: block;
+    margin: 0 auto;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: red;
+}
+/* Footer */
+footer {
+    background-color:#000000;
+    color: #0048FF;
+    bottom: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+footer p {
+    display:inline-block;
+    font-weight: bold;
+}
+footer a {
+    display:inline-block;
+    margin: auto;
+    width: 40%;
+    padding: 16px 0;
+    border-style: solid;
+    border-color: #222222;
+    background-color: #222222;
+    color: #ffffff;
+}
+footer a:hover {
+    background-color: #000000;
+    border-color: #0048FF;
+    border-style: solid;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+.footertext {
+    width: 49%;
+    display: inline-flex;
+}
+.footerbuttons {
+    width: 49%;
+    display: inline-flex;
+}
+/* Sitemap */
+.sitemap {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 2%;
+}
+.sitemap a {
+    max-width: 50%;
+    display:inline-block;
+    padding: 8px 16px;
+    color: #ffffff;
+    border-color: #222222;
+    background-color: #222222;
+    border-style: solid;
+}
+.sitemap a:hover {
+    background-color: #000000;
+    border-color: #0048FF;
+    border-style: solid;
+    box-shadow: 0 4px 10px 0 #0048FF;
+}
+@media screen and (min-width: 900px) and (not (max-height: 500px)) {
+    .asidefooter {
+        padding-left: 29%;
+    }
+}
+/* Responsive design Mobile */
+@media screen and (max-width: 600px) {
+    /* Makes Logo disappear on mobile devices */
+    .logo {
+        display: none;
+    }
+    /* Ensures there is minimal overflow on extremely small devices */
+    body {
+        word-wrap: break-word;
+    }
+    /* Makes header text fill screen, stops overflow into nav bar on very small screens.*/
+    .headertext {
+        width: 100%;
+        font-size: 80%;
+        overflow: hidden;
+    }
+    /* Makes welcome text fill screen*/
+    .welcometext{
+        width: 99%;
+        margin-bottom: 1%;
+    }
+    /* Makes about section fill screen*/
+    .about{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    /* Makes about section fill screen*/
+    .contact{
+        width: 100%;
+    }
+    /* Makes Footer smaller*/
+    footer  {
+        font-size: 90%;
+        padding: 1%;
+    }
+    /* Improves article appearance */
+    article {
+        margin: auto;
+        width: auto;
+        margin: 2%;
+    }
+    article h1 {
+        font-size: 200%;
+    }
+    article h2, h3 {
+        text-align: center;
+    }
+}
+/* Responsive design desktop */
+@media screen and (min-width: 600px) {
+    img:hover {
+        /* Apply box-shadow on hover */
+        box-shadow: 0 4px 10px 0 #0048FF;
+    }
+}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    /*Background colour and Text colour */
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    /* Featured article colour */
+    .featuredarticle {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    /* Article section background colour*/
+    .articles {
+        background-color: #222222;
+    }
+    /* Article section articles colour */
+    .articlecolumn {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    /* Contact Form colour */
+    .contact-form {
+        margin: 1%;
+        padding: 20px;
+        background-color: #222222;
+        color: #ffffff;
+    }
+    /* Contact form colour */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+.black {
+    background-color: #000000;
+}
