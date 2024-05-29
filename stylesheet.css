@@ -645,3 +645,10 @@ footer a:hover {
 .black {
     background-color: #000000;
 }
+pre {
+    background-color: #f1f1f1;
+    color: #000000;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
