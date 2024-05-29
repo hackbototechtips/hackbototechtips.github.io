@@ -354,13 +354,12 @@ article img {
     text-align: center;
 }
 .linkbutton {
-    margin-left: 40%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: block;
-    width: 15%;
     background-color: #222222;
     border: #222222;
     border-style: solid;
-    display:inline-block;
     padding: 8px 16px;
     text-align: center;
     color: #ffffff;
