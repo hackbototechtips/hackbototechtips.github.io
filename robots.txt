@@ -3,4 +3,5 @@ Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.png$
 Disallow: /*.gif$
+Disallow: /*javascript:void(0);
 Sitemap: https://hackbototechtips.github.io/sitemap.xml
