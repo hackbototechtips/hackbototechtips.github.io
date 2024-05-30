@@ -337,7 +337,8 @@ li.nav {
 article {
     width: 68%;
     margin-bottom: 80px;
-    margin-left: auto;
+    margin-left: 31%;
+    margin-right: 1%;
 }
 article h1 {
     text-align: center;
