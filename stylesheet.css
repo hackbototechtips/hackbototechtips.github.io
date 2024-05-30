@@ -219,7 +219,7 @@ li.nav {
 /* Responsive layout - makes the columns stack on top of each other, removes images */
 @media screen and (max-width: 1480px) and (min-width: 700px) {
     .featuredarticle {
-        margin: 2%, auto;
+        margin:2%, auto;
         width: 45ch;
     }
     .featuredarticle img {
@@ -232,10 +232,6 @@ li.nav {
         width: 98%;
         min-width: 0px;
     }
-    /* Improves article appearance */
-    article {
-        margin: auto;
-        }
 }
 /* Article showcase pages */
 .pagewelcome {
@@ -313,24 +309,6 @@ li.nav {
     display: table;
     clear: both;
 }
-/* Responsive layout - makes the columns stack on top of each other */
-@media screen and (max-width: 900px) {
-    .articlecolumn {
-        width: 100%;
-        margin: 2% auto;
-        min-width: 100%;
-    }
-    /* Makes aside hide on articles */
-    aside {
-        display: none;
-    }
-}
-/* Responsive layout - makes the images larger */
-@media screen and (max-width: 700px) {
-    .articlecolumn img {
-        max-width: 45%;
-    }
-}
 /* Article */
 article {
     width: 68%;
@@ -405,16 +383,31 @@ aside a:hover {
 aside h2 {
     margin: 3%;
 }
-
-/* Responsive- hide jump to section on short displays */
-@media screen and (max-height: 500px) {
+/* Responsive layout - makes the columns stack on top of each other */
+@media screen and (max-width: 900px) {
+    .articlecolumn {
+        width: 100%;
+        margin: 2%;
+        min-width: 100%;
+    }
+    /* Makes aside hide on articles */
     aside {
         display: none;
     }
     article {
         margin: auto;
-        width: auto;
-        margin: 2%;
+    }
+    .articlecolumn img {
+        max-width: 45%;
+    }
+}
+/* Responsive- hide jump to section on short displays */
+@media screen and (max-height: 260px) {
+    aside {
+        display: none;
+    }
+    article {
+        margin: auto;
     }
 }
 /* About and Contact */
@@ -554,7 +547,7 @@ footer a:hover {
     border-style: solid;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
-@media screen and (min-width: 900px) and (not (max-height: 500px)) {
+@media screen and (min-width: 900px){
     .asidefooter {
         padding-left: 29%;
     }
@@ -605,6 +598,9 @@ footer a:hover {
     }
     article h2, h3 {
         text-align: center;
+    }
+    li h3 {
+        text-align: left;
     }
 }
 /* Responsive design desktop */
