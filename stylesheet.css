@@ -247,13 +247,11 @@ li.nav {
 #pc_tips {
     background-image: url("pc_tips/old_pc.png");
     background-repeat: repeat;
-    background-color: #007BFF;
     background-position: right top;
   }
 #download_centre {
     background-image: url("download_centre/download_centre.png");
     background-repeat: repeat;
-    background-color: #007BFF;
     background-position: right center;
 }
 .articles {
