@@ -570,7 +570,7 @@ footer a:hover {
     }
     /* Makes welcome text fill screen*/
     .welcometext{
-        width: 99%;
+        width: auto;
         margin-bottom: 1%;
     }
     /* Makes about section fill screen*/
