@@ -21,14 +21,3 @@ function updateAsideHeight() {
 window.addEventListener('resize', updateAsideHeight);
 window.addEventListener('load', updateAsideHeight);
 
-function isSafari9() {
-  var userAgent = navigator.userAgent.toLowerCase();
-  return userAgent.indexOf('safari/') > -1 && userAgent.indexOf('version/9') > -1;
-}
-
-if (isSafari9()) {
-  var articleColumn = document.querySelector('.articlecolumn');
-  if (articleColumn) {
-      articleColumn.classList.add('safari9');
-  }
-}

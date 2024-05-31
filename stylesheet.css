@@ -282,18 +282,7 @@ li.nav {
     border: solid #007BFF;
     box-sizing: border-box; 
 }
-/* Adjust styles specifically for Safari 9 here */
-.safari9 .articlecolumn {
-    display: block;
-    float: none;
-    width: 100%;
-    margin: 0;
-    padding: 2%;
-    text-align: left;
-    background-color: #000000;
-    color: #ffffff;
-    border: solid #007BFF;
-  }
+
 .articlecolumn img {
     max-width: 75%;
     height: auto;
