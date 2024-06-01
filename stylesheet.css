@@ -92,6 +92,7 @@ header{
 /* Navigation Bar */
 nav {
     background-color: #000000;
+    position: -webkit-sticky; /* Safari 12 and older*/
     position: sticky;
     top: 0;
     z-index: 1;
@@ -282,7 +283,6 @@ li.nav {
     border: solid #007BFF;
     box-sizing: border-box; 
 }
-
 .articlecolumn img {
     max-width: 75%;
     height: auto;
@@ -309,6 +309,18 @@ li.nav {
     content: "";
     display: table;
     clear: both;
+}
+/* Fallback styles for Safari 9 or older */
+.safari9 .articlerow {
+    width: 100%;
+    display: flexbox;
+    height: max-content;
+}
+.safari9 .articlecolumn {
+    width: 40%;
+    float: left;
+    box-sizing: border-box; 
+    min-height: inherit;
 }
 /* Article */
 article {
