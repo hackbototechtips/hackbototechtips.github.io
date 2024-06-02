@@ -54,16 +54,16 @@ section, div {
 .logo {
     float: left;
     height: 100%;
-    width: auto;
+    width: 22%;
 }
 .headertext {
     float: left;
-    width: auto;
+    width: 88%;
     margin: auto;
     font-size: 170%;
     text-align: center;
     color: #007BFF;
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
     font-style: normal;
     text-decoration: underline;
     letter-spacing: 2px;
