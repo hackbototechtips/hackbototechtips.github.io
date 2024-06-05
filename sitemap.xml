@@ -21,6 +21,13 @@
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
+        <!-- Optimising Windows 10/ 11 -->
+    <url>
+        <loc>https://hackbototechtips.github.io/pc_tips/windows_optimise.html</loc>
+        <lastmod>2024-06-05</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
     <!-- Fixing hardware acceleration black screen -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/hardware_acceleration_black_screen_fix.html</loc>
