@@ -57,4 +57,3 @@ updateSafariClass();
 // Listen for orientation changes
 window.addEventListener('orientationchange', updateSafariClass);
 })();
-
