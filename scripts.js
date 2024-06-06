@@ -24,24 +24,15 @@ window.addEventListener('load', updateAsideHeight);
 
 document.addEventListener("DOMContentLoaded", function() {
   const navHeight = document.querySelector('nav').offsetHeight;
-  const totalOffset = navHeight;
-
   document.querySelectorAll('aside a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
           e.preventDefault();
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - totalOffset;
-
-          // Smooth scroll for modern browsers
-          if ('scrollBehavior' in document.documentElement.style) {
-              window.scrollTo({
-                  top: targetPosition,
-                  behavior: 'smooth'
-              });
-          } else { // Fallback to regular scroll
-              window.scrollTo(0, targetPosition);
-          }
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({
+              top: targetPosition,
+          });
       });
   });
 });

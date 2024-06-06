@@ -3,6 +3,7 @@ body{
     font-family: Arial, sans-serif;
     overscroll-behavior: none;
     margin: 0;
+    scroll-behavior: smooth;
 }
 article, .headertext, .contact, .black {
     opacity: 0;
