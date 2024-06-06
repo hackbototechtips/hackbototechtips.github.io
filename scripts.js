@@ -30,7 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);
+
+      // Calculate the target position relative to the viewport
       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
+
+      // Scroll to the target position
       window.scrollTo({
         top: targetPosition,
       });
