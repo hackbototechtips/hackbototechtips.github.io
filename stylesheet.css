@@ -3,8 +3,10 @@ body{
     font-family: Arial, sans-serif;
     overscroll-behavior: none;
     margin: 0;
-    scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+  }
 article, .headertext, .contact, .black {
     opacity: 0;
     animation: fadeInZoom 0.3s forwards;

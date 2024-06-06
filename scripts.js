@@ -24,17 +24,18 @@ window.addEventListener('load', updateAsideHeight);
 
 document.addEventListener("DOMContentLoaded", function() {
   const navHeight = document.querySelector('nav').offsetHeight;
-  document.querySelectorAll('aside a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-          window.scrollTo({
-              top: targetPosition,
-          });
+  const asideLinks = document.querySelectorAll('aside a');
+  for (var i = 0; i < asideLinks.length; i++) {
+    asideLinks[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({
+        top: targetPosition,
       });
-  });
+    });
+  }
 });
 
 (function() {
