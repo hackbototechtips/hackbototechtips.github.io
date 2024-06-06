@@ -22,6 +22,25 @@ function updateAsideHeight() {
 window.addEventListener('resize', updateAsideHeight);
 window.addEventListener('load', updateAsideHeight);
 
+document.addEventListener("DOMContentLoaded", function() {
+  const navHeight = document.querySelector('nav').offsetHeight;
+  const totalOffset = navHeight;
+
+  document.querySelectorAll('aside a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - totalOffset;
+
+          window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+          });
+      });
+  });
+});
+
 (function() {
 function isiPadInLandscape() {
   var ua = navigator.userAgent;

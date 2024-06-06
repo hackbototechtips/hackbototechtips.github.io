@@ -3,9 +3,11 @@ body{
     font-family: Arial, sans-serif;
     overscroll-behavior: none;
     margin: 0;
+}
+img, article, .headertext, .contact, .black {
     opacity: 0;
-    animation: fadeInZoom 0.3s ease-in-out forwards;
-    animation-delay: 0.05s;
+    animation: fadeInZoom 0.3s forwards;
+    animation-delay: 0.1s;
 }
 @view-transition {
   navigation: auto;
@@ -21,7 +23,17 @@ body{
         top: 0;
     }
 }
-
+@keyframes fadeOutZoom {
+    100% {
+        transform: scale(0.9);
+        top: 0;
+    }
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        top: 0;
+    }
+}
 p {
     max-width: 85ch;
     margin-left: auto;
