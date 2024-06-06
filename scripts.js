@@ -22,28 +22,6 @@ function updateAsideHeight() {
 window.addEventListener('resize', updateAsideHeight);
 window.addEventListener('load', updateAsideHeight);
 
-document.addEventListener("DOMContentLoaded", function() {
-  const navHeight = document.querySelector('nav').offsetHeight;
-  const asideLinks = document.querySelectorAll('aside a');
-  for (var i = 0; i < asideLinks.length; i++) {
-    asideLinks[i].addEventListener('click', handleClick);
-  }
-
-  function handleClick(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-
-    // Calculate the target position relative to the viewport
-    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
-
-    // Scroll to the target position
-    window.scrollTo({
-      top: targetPosition,
-    });
-  }
-});
-
 (function() {
 function isiPadInLandscape() {
   var ua = navigator.userAgent;
