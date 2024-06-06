@@ -26,18 +26,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const navHeight = document.querySelector('nav').offsetHeight;
   const asideLinks = document.querySelectorAll('aside a');
   for (var i = 0; i < asideLinks.length; i++) {
-    asideLinks[i].addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
+    asideLinks[i].addEventListener('click', handleClick);
+  }
 
-      // Calculate the target position relative to the viewport
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
+  function handleClick(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
 
-      // Scroll to the target position
-      window.scrollTo({
-        top: targetPosition,
-      });
+    // Calculate the target position relative to the viewport
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
+
+    // Scroll to the target position
+    window.scrollTo({
+      top: targetPosition,
     });
   }
 });
