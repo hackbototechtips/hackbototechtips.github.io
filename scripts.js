@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);
-      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({
         top: targetPosition,
       });
