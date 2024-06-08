@@ -585,6 +585,22 @@ footer a:hover {
     width: 49%;
     display: inline-flex;
 }
+/* Table */
+table {
+    width: 75%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    border: 2px solid #000000;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 2px solid #000000;
+}
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
 /* Sitemap */
 .sitemap {
     background-color: #222222;
@@ -669,6 +685,9 @@ footer a:hover {
     li h3 {
         text-align: left;
     }
+    table {
+        width: 100%;
+    }
 }
 /* Responsive design desktop */
 @media screen and (min-width: 600px) {
@@ -698,6 +717,16 @@ footer a:hover {
     .contact-form textarea {
         background-color: #000000;
         color: #ffffff;
+    }
+    th, td {
+        border-bottom: 2px solid #ffffff;
+    }
+    table {
+        border: 2px solid #ffffff;
+    }
+    th {
+        background-color: #ffffff;
+        color: #000000;
     }
 }
 .black {
