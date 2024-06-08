@@ -77,6 +77,14 @@
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
+    <!-- Download PopCnt Checker -->
+    <url>
+        <loc>https://hackbototechtips.github.io/download_centre/computer_optimiser.html</loc>
+        <lastmod>2024-06-08</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Sitemap -->
     <url>
         <loc>https://hackbototechtips.github.io/contact.html</loc>
