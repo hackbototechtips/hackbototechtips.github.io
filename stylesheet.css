@@ -327,8 +327,6 @@ li.nav {
     width: 22%;
     min-width: 45ch;
     margin: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
     padding-bottom: 1%;
     text-align: center;
     background-color: #000000;
@@ -352,6 +350,10 @@ li.nav {
     display:inline-block;
     width: 85%;
     padding: 14px 16px;
+}
+.articlecolumn p {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .articlecolumn:hover{
     box-shadow: 0 4px 15px 0 #007BFF;
@@ -411,6 +413,7 @@ article img {
     margin-right: 15%;
     display: block;
     background-color: #222222;
+    background-image: linear-gradient(#333333, #111111);
     border: #222222;
     border-style: solid;
     padding: 8px 16px;
@@ -430,14 +433,15 @@ aside {
     position: fixed;
     left: 0;
     background-color: #000000;
-    color: #007BFF;
+    color: #ffffff;
     overflow-y: auto;
     box-sizing: border-box;
 }
 aside a {
     color: #ffffff;
     background-color:#222222;
-    border-color: #000000;
+    border: #222222;
+    background-image: linear-gradient(#333333, #111111);
     border-style: solid;
     display:inline-block;
     width: 90%;
@@ -635,7 +639,9 @@ th {
     padding: 8px 16px;
     color: #ffffff;
     border-color: #222222;
+    background-image: linear-gradient(#333333, #111111);
     background-color: #222222;
+
     border-style: solid;
 }
 .sitemap a:hover {
