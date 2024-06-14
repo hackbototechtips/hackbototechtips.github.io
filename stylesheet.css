@@ -146,9 +146,10 @@ nav {
     border: #222222;
     border-style: solid;
     display:inline-block;
-    padding: 16px 16px;
+    padding: 8px 16px;
     text-decoration: none;
     margin: 0px 8px;
+    margin-bottom: 8px;
     align-items: center;
 }
 .nav a.active {
@@ -184,7 +185,7 @@ li.nav {
 .nav .icon {
     display: none;
 }
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1280px) {
     .nav a:not(:first-child)  {display: none;}
     .nav a.icon {
       float: right;
@@ -195,7 +196,7 @@ li.nav {
       margin: 0px 8px;
     }
 }
-  @media screen and (max-width: 1480px) {
+  @media screen and (max-width: 1280px) {
     .nav.responsive .icon {
         float: right;
         display: block;
@@ -209,12 +210,13 @@ li.nav {
         font-size: 150%;
         text-shadow: 1px 0 6px rgb(0, 0, 0);
     }
+    .nav a {
+        padding: 16px 16px;
+        margin: 0px 8px;
+        margin-bottom: 0px;
+    }
 }
-.nav a {
-    float: left;
-    display: block;
-    text-decoration: none;
-}
+
 /* Welcome page, display 3 articles and a page welcome*/ 
 .welcometext {
     max-width: 85ch;
@@ -241,6 +243,7 @@ li.nav {
     color: #ffffff;
     border: solid #007BFF;
     box-sizing: border-box; 
+    transition: 0.3s;
 }
 .featuredarticle img {
     max-width: 45%;
@@ -253,6 +256,9 @@ li.nav {
     border: #222222;
     display:inline-block;
     padding: 16px 16px;
+}
+.featuredarticle:hover{
+    box-shadow: 0 4px 15px 0 #007BFF;
 }
 .featuredarticle a:hover{
     background-color: #000000;
@@ -326,7 +332,8 @@ li.nav {
     background-color: #000000;
     color: #ffffff;
     border: solid #007BFF;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    transition: 0.3s;
 }
 .articlecolumn img {
     max-width: 75%;
@@ -341,7 +348,10 @@ li.nav {
     display:inline-block;
     padding: 8px 16px;
 }
-.articlecolumn a:hover{
+.articlecolumn:hover{
+    box-shadow: 0 4px 15px 0 #007BFF;
+}
+.articlecolumn  a:hover{
     background-color: #000000;
     color: #007BFF;
     border: #007BFF;
