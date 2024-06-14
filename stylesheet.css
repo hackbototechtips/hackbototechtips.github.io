@@ -143,8 +143,7 @@ nav {
 .nav a {
     color: #ffffff;
     background: #222222;
-    border: #222222;
-    border-style: solid;
+    background-image: linear-gradient(#333333, #111111);
     display:inline-block;
     padding: 8px 16px;
     text-decoration: none;
@@ -160,8 +159,6 @@ nav {
 .nav a:hover {
     background-color: #000000;
     color: #007BFF;
-    border: #007BFF;
-    border-style: solid;
     text-decoration: underline;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
@@ -240,6 +237,7 @@ li.nav {
     margin: 5px;
     text-align: center;
     background-color: #000000;
+    background-image: linear-gradient(#111111, #000000);
     color: #ffffff;
     border: solid #007BFF;
     box-sizing: border-box; 
@@ -330,6 +328,7 @@ li.nav {
     padding-bottom: 1%;
     text-align: center;
     background-color: #000000;
+    background-image: linear-gradient(#111111, #000000);
     color: #ffffff;
     border: solid #007BFF;
     box-sizing: border-box;
@@ -578,6 +577,7 @@ footer a {
     border-style: solid;
     border-color: #222222;
     background-color: #222222;
+    background-image: linear-gradient(#333333, #111111);
     color: #ffffff;
 }
 footer a:hover {
