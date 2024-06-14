@@ -62,10 +62,6 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
-section {
-    margin-left: 1%;
-    margin-right: 1%;
-}
 /* Style */ 
 img {
     border-radius: 15px;
@@ -76,12 +72,18 @@ a {
     transition: 0.2s;
 }
 /* Rounded corners */
-section, div {
-    border-radius: 15px;
+div {
+    border-radius: 20px;
 }
 .welcometext, .pagewelcome{
+    background-image: linear-gradient(#222222, #000000);
+    margin: auto;
+    color: #ffffff;
+    border: #222222;
     border-style: solid;
-    border-color: #007BFF;
+}
+.articles {
+    border-radius: 0;
 }
 /* Header */
 .logo {
@@ -101,7 +103,7 @@ section, div {
     text-decoration: underline;
     letter-spacing: 2px;
     src: url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
-    text-shadow: 1px 0 10px rgb(0, 0, 0);
+    text-shadow: 1px 0 10px #000000;
 }
 header {
     background-color: #000000;
@@ -150,6 +152,8 @@ nav {
     margin: 0px 8px;
     margin-bottom: 8px;
     align-items: center;
+    border: #222222;
+    border-style: solid;
 }
 .nav a.active {
     background-color: #000000;
@@ -159,6 +163,8 @@ nav {
 .nav a:hover {
     background-color: #000000;
     color: #007BFF;
+    border: #007BFF;
+    border-style: solid;
     text-decoration: underline;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
@@ -213,7 +219,6 @@ li.nav {
         margin-bottom: 0px;
     }
 }
-
 /* Welcome page, display 3 articles and a page welcome*/ 
 .welcometext {
     max-width: 85ch;
@@ -230,6 +235,7 @@ li.nav {
     font-size: 200%;
 }
 .featuredarticle {
+    max-width: 85ch;
     float: left;
     width: 30%;
     min-width: 40ch;
@@ -237,7 +243,7 @@ li.nav {
     margin: 5px;
     text-align: center;
     background-color: #000000;
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(#222222, #000000);
     color: #ffffff;
     border: solid #007BFF;
     box-sizing: border-box; 
@@ -286,8 +292,6 @@ li.nav {
 /* Article showcase pages */
 .pagewelcome {
     max-width: 75ch;
-    background-color: #ffffff;
-    color: #000000;
     padding: 2%;
 }
 #pc_tips {
@@ -302,7 +306,6 @@ li.nav {
 }
 .articles {
     background-color: #f5f5f5;
-    width: 98%;
     margin: auto;
     overflow: hidden;
     padding: 1%;
@@ -320,6 +323,7 @@ li.nav {
 }
 .articlecolumn {
     float: left;
+    max-width: 85ch;
     width: 22%;
     min-width: 45ch;
     margin: 1%;
@@ -328,7 +332,7 @@ li.nav {
     padding-bottom: 1%;
     text-align: center;
     background-color: #000000;
-    background-image: linear-gradient(#111111, #000000);
+    background-image: linear-gradient(#222222, #000000);
     color: #ffffff;
     border: solid #007BFF;
     box-sizing: border-box;
@@ -342,10 +346,12 @@ li.nav {
 .articlecolumn a {
     color: #ffffff;;
     background: #222222;
+    background-image: linear-gradient(#333333, #111111);
     border: #222222;
     border-style: solid;
     display:inline-block;
-    padding: 8px 16px;
+    width: 85%;
+    padding: 14px 16px;
 }
 .articlecolumn:hover{
     box-shadow: 0 4px 15px 0 #007BFF;
@@ -506,6 +512,7 @@ aside h2 {
     padding-right: 20px;
     padding-top: 20px;
     background-color: #000000;
+    background-image: linear-gradient(#222222, #000000);
     color: #ffffff;
 }
 .contact-form label {
@@ -517,10 +524,11 @@ aside h2 {
     width: 97%;
     padding: 1%;
     margin-bottom: 10px;
-    border: 2px solid #ffffff;
+    border: 2px solid #007BFF;
     border-radius: 10px;
     font-family: sans-serif;
-    background-color: #007BFF;
+    background-color: #000000;
+    box-shadow: 0 4px 10px 0 #007BFF;
     color: #ffffff;
 }
 .contact-form textarea {
@@ -538,6 +546,8 @@ aside h2 {
     cursor: pointer;
     font-size: 110%;
     display: block;
+    background-image: linear-gradient(#333333, #111111);
+    border-color: #222222;
     margin: auto;
     margin-bottom: 5px;
     transition: 0.2s;
@@ -551,9 +561,10 @@ aside h2 {
 }
 .contact-form input:invalid,
 .contact-form textarea:invalid {
-  border-color: red;
+  border-color: #ff0000;
   background-color: #222222;
   color: #ffffff;
+  box-shadow: 0 4px 10px 0 #ff0000;
 }
 /* Footer */
 footer {
@@ -564,6 +575,7 @@ footer {
     display: block;
     text-align: center;
     margin-top: 5px;
+    font-size: 110%;
 }
 footer p {
     display:inline-block;
@@ -573,7 +585,7 @@ footer a {
     display:inline-block;
     margin: auto;
     width: 40%;
-    padding: 16px 0;
+    padding: 14px 0;
     border-style: solid;
     border-color: #222222;
     background-color: #222222;
@@ -698,13 +710,7 @@ th {
     table {
         width: 100%;
     }
-}
-/* Responsive design desktop */
-@media screen and (min-width: 600px) {
-    img:hover {
-        /* Apply box-shadow on hover */
-        box-shadow: 0 4px 10px 0 #007BFF;
-    }
+
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
