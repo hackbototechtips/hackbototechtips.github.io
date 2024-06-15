@@ -239,6 +239,11 @@ li.nav {
     text-decoration: underline;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
+/* iOS 9 iPad fallback*/
+.safari9 .featuredarticle {
+    width: 30%;
+}
+
 /* Responsive layout - Makes featured articles fill screen, removes horizontal navigation bar. */
 @media screen and (max-width: 900px) {
     .featuredarticle  {
@@ -331,12 +336,6 @@ li.nav {
 }
 .safari9 .articlecolumn {
     width: 40%;
-    float: left;
-    box-sizing: border-box; 
-    min-height: inherit;
-}
-.safari9 .featuredarticle {
-    width: 32%;
     float: left;
     box-sizing: border-box; 
     min-height: inherit;
