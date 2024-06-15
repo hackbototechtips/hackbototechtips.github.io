@@ -7,35 +7,8 @@ body{
 html {
     scroll-behavior: smooth;
   }
-article, .headertext, .contact, .black {
-    opacity: 0;
-    animation: fadeInZoom 0.3s forwards;
-    animation-delay: 0.1s;
-}
 @view-transition {
   navigation: auto;
-}
-@keyframes fadeInZoom {
-    0% {
-        transform: scale(0.9);
-        top: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-        top: 0;
-    }
-}
-@keyframes fadeOutZoom {
-    100% {
-        transform: scale(0.9);
-        top: 0;
-    }
-    0% {
-        opacity: 1;
-        transform: scale(1);
-        top: 0;
-    }
 }
 p {
     max-width: 85ch;
@@ -68,7 +41,6 @@ img {
     transition: 0.2s;
 }
 a {
-    
     transition: 0.2s;
 }
 /* Rounded corners */
@@ -102,7 +74,7 @@ div {
     font-style: normal;
     text-decoration: underline;
     letter-spacing: 2px;
-    src: url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
+    src: local('Anton'),url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
     text-shadow: 1px 0 10px #000000;
 }
 header {
@@ -249,11 +221,6 @@ li.nav {
     box-sizing: border-box; 
     transition: 0.3s;
 }
-.featuredarticle img {
-    max-width: 45%;
-    height: auto;
-    margin-bottom: 5px;
-}
 .featuredarticle a {
     color: #007BFF;
     background: #222222;
@@ -272,16 +239,6 @@ li.nav {
     text-decoration: underline;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
-/* Responsive layout - makes the columns stack on top of each other, removes images */
-@media screen and (max-width: 1480px) and (min-width: 700px) {
-    .featuredarticle {
-        margin:2%, auto;
-        width: 45ch;
-    }
-    .featuredarticle img {
-        max-width: 20%;
-    }
-}
 /* Responsive layout - Makes featured articles fill screen, removes horizontal navigation bar. */
 @media screen and (max-width: 900px) {
     .featuredarticle  {
@@ -294,15 +251,9 @@ li.nav {
     max-width: 75ch;
     padding: 2%;
 }
-#pc_tips {
-    background-image: url("pc_tips/old_pc.png");
-    background-repeat: repeat;
-    background-position: right top;
-  }
-#download_centre {
-    background-image: url("download_centre/download_centre.png");
-    background-repeat: repeat;
-    background-position: right center;
+.pagewelcome h1 {
+    margin-top: 0;
+    font-size: 200%;
 }
 .articles {
     background-color: #f5f5f5;
@@ -500,21 +451,20 @@ aside h2 {
     transition: 0.2s;
 }
 .contact p {
-    margin:auto;
-    padding: 5px;
+    margin: 2%;
+    padding-left: 2%;
     max-width: 75ch;
-    text-align: center;
 }
  .contact h1 {
-    text-align: center;
-    padding-top: 10px;
+    margin: 2%;
+    font-size: 200%;
+    padding: 2%;
 }
 /* Contact Form */
 .contact-form {
     margin: 1%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding: 20px;
+    padding-bottom: 10px;
     background-color: #000000;
     background-image: linear-gradient(#222222, #000000);
     color: #ffffff;
@@ -729,13 +679,6 @@ th {
         background-color: #222222;
     }
     .pagewelcome {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    /* Contact form colour */
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
         background-color: #000000;
         color: #ffffff;
     }
