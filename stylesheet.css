@@ -242,6 +242,7 @@ li.nav {
 /* iOS 9 iPad fallback*/
 .safari9 .featuredarticle {
     width: 30%;
+    min-width: none;
 }
 
 /* Responsive layout - Makes featured articles fill screen, removes horizontal navigation bar. */
