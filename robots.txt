@@ -3,4 +3,5 @@ Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.png$
 Disallow: /*.gif$
+Allow: /favicon.png
 Sitemap: https://hackbototechtips.github.io/sitemap.xml
