@@ -49,6 +49,13 @@
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
+    <!--Blocking ads on your PC-->
+    <url>
+        <loc>https://hackbototechtips.github.io/pc_tips/adblocker.html</loc>
+        <lastmod>2024-06-16</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
     <!-- Download Centre -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre.html</loc>
