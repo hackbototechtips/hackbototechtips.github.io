@@ -160,7 +160,7 @@ li.nav {
 .nav .icon {
     display: none;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
     .nav a:not(:first-child)  {display: none;}
     .nav a.icon {
       float: right;
@@ -171,7 +171,7 @@ li.nav {
       margin: 0px 8px;
     }
 }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1000px) {
     .nav.responsive .icon {
         float: right;
         display: block;
@@ -185,6 +185,9 @@ li.nav {
         font-size: 150%;
         text-shadow: 1px 0 6px rgb(0, 0, 0);
     }
+}
+/* Tablets big buttons */
+@media screen and (max-width: 1280px) {
     .nav a {
         padding: 16px 16px;
         margin: 0px 8px;
