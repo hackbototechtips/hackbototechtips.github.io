@@ -3,6 +3,7 @@ body{
     font-family: Arial, sans-serif;
     overscroll-behavior: none;
     margin: 0;
+    scroll-behavior: smooth;
 }
 html {
     scroll-behavior: smooth;
@@ -10,35 +11,23 @@ html {
 @view-transition {
   navigation: auto;
 }
-p {
-    max-width: 85ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-li {
-    max-width: 85ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1{
-    max-width: 75ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-h2{
-    max-width: 75ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-h3{
-    max-width: 75ch;
-    margin-left: auto;
-    margin-right: auto;
-}
 /* Style */ 
+p, li {
+    max-width: 85ch;
+}
+h1, h2, h3{
+    max-width: 75ch;
+}
+p, li, h1, h2, h3, article img {
+    margin-left: auto;
+    margin-right: auto;
+}
 img {
     border-radius: 15px;
     transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 a {
     transition: 0.2s;
@@ -54,7 +43,8 @@ div {
     border: #222222;
     border-style: solid;
 }
-.articles {
+/*Not Rounded*/
+.articles, .nav {
     border-radius: 0;
 }
 /* Header */
@@ -82,28 +72,16 @@ header {
     height: 100px;
     width: 100%;
     margin-top: 0px;
-}
-/* Removes hover effect from header logo*/
-.logo img:hover{
-    box-shadow: none;
-}
-/* Sets the appearance of title text to match a heading 1 */
-.headertext p {
-    font-size: 2em; /* Adjust font size */
-    font-weight: bold; /* Make font bold */
-    padding: 0; /* Remove default padding */
-    line-height: 1.2; /* Adjust line height */
-    margin-top: 0.5em; /* Adjust top margin to create space */
-}
-img { /* Fixes images being too large */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-header{
     display: flex;
 }
-
+/* Sets the appearance of title text to match h1 */
+.headertext p {
+    font-size: 2em; 
+    font-weight: bold; 
+    padding: 0; 
+    line-height: 1.2; 
+    margin-top: 0.5em;
+}
 /* Navigation Bar */
 nav {
     background-color: #000000;
@@ -111,34 +89,19 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0 8px;
 }
 .nav a {
-    color: #ffffff;
-    background: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    display:inline-block;
     padding: 8px 16px;
     text-decoration: none;
-    margin: 0px 8px;
-    margin-bottom: 8px;
+    margin: 0 8px 8px 8px;
     align-items: center;
-    border: #222222;
-    border-style: solid;
+    display:inline-block;
 }
 .nav a.active {
-    background-color: #000000;
+    background: #000000;
     color: #007BFF;
     font-weight: bold;
-}
-.nav a:hover {
-    background-color: #000000;
-    color: #007BFF;
-    border: #007BFF;
-    border-style: solid;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
 }
 li.nav {
     display: inline;
@@ -155,23 +118,20 @@ li.nav {
 .nav {
     overflow: hidden;
     top: 0;
-    border-radius: 0;
 }
 .nav .icon {
     display: none;
 }
+/* Responsive Nav */
 @media screen and (max-width: 1000px) {
-    .nav a:not(:first-child)  {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-      margin: 0;
-      list-style-type: none;
-      padding: 16px 16px;
-      margin: 0px 8px;
+    .nav a:not(:first-child) {
+        display: none;
     }
-}
-  @media screen and (max-width: 1000px) {
+    .nav a.icon {
+        float: right;
+        display: block;
+        padding: 16px;
+    }
     .nav.responsive .icon {
         float: right;
         display: block;
@@ -189,17 +149,15 @@ li.nav {
 /* Tablets big buttons */
 @media screen and (max-width: 1280px) {
     .nav a {
-        padding: 16px 16px;
+        padding: 16px;
         margin: 0px 8px;
-        margin-bottom: 0px;
     }
 }
 /* Welcome page, display 3 articles and a page welcome*/ 
 .welcometext {
     max-width: 85ch;
     padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
 }
 .welcometext p {
@@ -216,31 +174,6 @@ li.nav {
     min-width: 40ch;
     padding: 5px;
     margin: 5px;
-    text-align: center;
-    background-color: #000000;
-    background-image: linear-gradient(#222222, #000000);
-    color: #ffffff;
-    border: solid #007BFF;
-    box-sizing: border-box; 
-    transition: 0.3s;
-}
-.featuredarticle a {
-    color: #007BFF;
-    background: #222222;
-    border: #222222;
-    display:inline-block;
-    padding: 16px 16px;
-}
-.featuredarticle:hover{
-    box-shadow: 0 4px 15px 0 #007BFF;
-}
-.featuredarticle a:hover{
-    background-color: #000000;
-    color: #007BFF;
-    border: #007BFF;
-    border-style: solid;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
 }
 /* Responsive layout - Makes featured articles fill screen, removes horizontal navigation bar. */
 @media screen and (max-width: 900px) {
@@ -248,6 +181,32 @@ li.nav {
         width: 98%;
         min-width: 0px;
     }
+}
+/* Hover animation for cards */
+.articlecolumn:hover, .featuredarticle:hover{
+    box-shadow: 0 4px 15px 0 #007BFF;
+}
+/*Button hover animation */
+.articlecolumn a:hover, .linkbutton:hover, .nav a:hover, .contact-form input[type="submit"]:hover, footer a:hover, .sitemap a:hover, aside a:hover{
+    color: #007BFF;
+    border: solid #007BFF;
+    text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #007BFF;
+}
+/* Button appearance */
+aside a, footer a, .sitemap a, .nav a, .articlecolumn a, .linkbutton {
+    color: #ffffff;
+    background: linear-gradient(#333333, #111111);
+    border: solid #222222;
+}
+/* Card appearance */
+.featuredarticle, .articlecolumn{
+    text-align: center;
+    background:  linear-gradient(#222222, #000000);
+    color: #ffffff;
+    border: solid #007BFF;
+    box-sizing: border-box; 
+    transition: 0.3s;
 }
 /* Article showcase pages */
 .pagewelcome {
@@ -282,13 +241,6 @@ li.nav {
     min-width: 45ch;
     margin: 1%;
     padding-bottom: 1%;
-    text-align: center;
-    background-color: #000000;
-    background-image: linear-gradient(#222222, #000000);
-    color: #ffffff;
-    border: solid #007BFF;
-    box-sizing: border-box;
-    transition: 0.3s;
 }
 .articlecolumn img {
     max-width: 75%;
@@ -296,29 +248,13 @@ li.nav {
     margin-bottom: 10px;
 }
 .articlecolumn a {
-    color: #ffffff;;
-    background: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    border: #222222;
-    border-style: solid;
-    display:inline-block;
     width: 85%;
     padding: 14px 16px;
+    display:inline-block;
 }
 .articlecolumn p {
     padding-left: 5px;
     padding-right: 5px;
-}
-.articlecolumn:hover{
-    box-shadow: 0 4px 15px 0 #007BFF;
-}
-.articlecolumn  a:hover{
-    background-color: #000000;
-    color: #007BFF;
-    border: #007BFF;
-    border-style: solid;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
 }
 /* Clearfix for .articles */
 .articles::after {
@@ -327,16 +263,12 @@ li.nav {
     clear: both;
 }
 /* Fallback styles for Safari 9 or older */
-.safari9 .articlecolumn {
-    width: 40%;
-}
-.safari9 .featuredarticle {
+.safari9 .articlecolumn, .safari9 .featuredarticle {
     width: 40%;
 }
 /* Article */
 article {
     width: 68%;
-    margin-bottom: 80px;
     margin-left: 31%;
     margin-right: 1%;
 }
@@ -348,11 +280,6 @@ article h1 {
 article img {
     width: 50%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-#imgdescription{
-    text-align: center;
 }
 .imgdescription{
     text-align: center;
@@ -361,21 +288,8 @@ article img {
     margin-left: 15%;
     margin-right: 15%;
     display: block;
-    background-color: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    border: #222222;
-    border-style: solid;
     padding: 8px 16px;
     text-align: center;
-    color: #ffffff;
-}
-.linkbutton:hover {
-    background-color: #000000;
-    color: #007BFF;
-    border: #007BFF;
-    border-style: solid;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
 }
 aside {
     width: 29%;
@@ -387,24 +301,12 @@ aside {
     box-sizing: border-box;
 }
 aside a {
-    color: #ffffff;
-    background-color:#222222;
-    border: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    border-style: solid;
-    display:inline-block;
     width: 90%;
     padding: 6px;
     margin-left: 1%;
     margin-top: 4px;
     margin-bottom: 4px;
-}
-aside a:hover {
-    color: #007BFF;
-    border-color: #007BFF;
-    background-color: #000000;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
+    display:inline-block;
 }
 aside h2 {
     margin: 3%;
@@ -490,26 +392,16 @@ aside h2 {
     min-width: fit-content;
     width: 50%;
     padding: 15px;
-    background-color: #222222;
-    border-color: #000000;
     color: #ffffff;
     text-decoration: underline;
-    border-style: solid;
     cursor: pointer;
     font-size: 110%;
     display: block;
-    background-image: linear-gradient(#333333, #111111);
-    border-color: #222222;
+    background: linear-gradient(#333333, #111111);
+    border: solid #222222;
     margin: auto;
     margin-bottom: 5px;
     transition: 0.2s;
-}
-.contact-form input[type="submit"]:hover {
-    color: #007BFF;
-    border-color: #007BFF;
-    background-color: #000000;
-    text-decoration: underline;
-    box-shadow: 0 4px 10px 0 #007BFF;
 }
 .contact-form input:invalid,
 .contact-form textarea:invalid {
@@ -534,28 +426,12 @@ footer p {
     font-weight: bold;
 }
 footer a {
-    display:inline-block;
     margin: auto;
     width: 40%;
     padding: 14px 0;
-    border-style: solid;
-    border-color: #222222;
-    background-color: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    color: #ffffff;
+    display:inline-block;
 }
-footer a:hover {
-    background-color: #000000;
-    border-color: #007BFF;
-    color: #007BFF;
-    border-style: solid;
-    box-shadow: 0 4px 10px 0 #007BFF;
-}
-.footertext {
-    width: 49%;
-    display: inline-flex;
-}
-.footerbuttons {
+.footertext, .footerbuttons {
     width: 49%;
     display: inline-flex;
 }
@@ -583,20 +459,8 @@ th {
 }
 .sitemap a {
     max-width: 50%;
-    display:inline-block;
     padding: 8px 16px;
-    color: #ffffff;
-    border-color: #222222;
-    background-image: linear-gradient(#333333, #111111);
-    background-color: #222222;
-    border-style: solid;
-}
-.sitemap a:hover {
-    background-color: #000000;
-    border-color: #007BFF;
-    color: #007BFF;
-    border-style: solid;
-    box-shadow: 0 4px 10px 0 #007BFF;
+    display:inline-block;
 }
 @media screen and (min-width: 900px){
     .asidefooter {
@@ -624,17 +488,13 @@ th {
         overflow: hidden;
     }
     /* Makes welcome text fill screen*/
-    .welcometext{
+    .welcometext, .pagewelcome{
         width: auto;
-        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
-    /* Makes about section fill screen*/
-    .about{
-        width: 100%;
-        margin-bottom: 1%;
-    }
-    /* Makes about section fill screen*/
-    .contact{
+    /* Makes contact and table fill screen*/
+    .contact, table{
         width: 100%;
     }
     .about{
@@ -660,10 +520,6 @@ th {
     li h3 {
         text-align: left;
     }
-    table {
-        width: 100%;
-    }
-
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -675,10 +531,6 @@ th {
     /* Article section background colour*/
     .articles {
         background-color: #222222;
-    }
-    .pagewelcome {
-        background-color: #000000;
-        color: #ffffff;
     }
     th, td {
         border-bottom: 2px solid #ffffff;
