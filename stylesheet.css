@@ -495,7 +495,8 @@ th {
     }
     /* Makes contact and table fill screen*/
     .contact, table{
-        width: 100%;
+        width: 98%;
+        margin: 0 1%;
     }
     .about{
         display: none;
