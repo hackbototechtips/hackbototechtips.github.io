@@ -198,6 +198,7 @@ aside a, footer a, .sitemap a, .nav a, .articlecolumn a, .linkbutton {
     color: #ffffff;
     background: linear-gradient(#333333, #111111);
     border: solid #222222;
+    border-radius: 20px;
 }
 /* Card appearance */
 .featuredarticle, .articlecolumn{
