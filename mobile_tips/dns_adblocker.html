@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how you can block advertisements on your mobile device.">
+    <meta name="keywords" content="DNS, Adblock, Ads, block, iOS, Android">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../stylesheet.css"> <!-- Link to external stylesheet -->
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <script src="../scripts.js"></script> <!-- Link to external JavaScript file -->
+    <title>DNS Adblock | Hackboto Tech Tips</title>
+</head>
+<body>
+    <header id="top-of-page"> <!-- Header section -->
+        <div class="logo">
+            <img src="../index/BrandLogo.png" alt="company logo" title="Hackboto Tech Tips logo">
+        </div>
+        <div class="headertext">
+            <p>Hackboto Tech Tips</p>
+        </div>
+    </header>
+    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+        <div class="columnnav">
+            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+            <a href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
+            <a class="active" href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+            <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+            <a href="../tech_advice.html" title="Find tech advice here">Tech Advice</a>
+            <a href="../contact.html" title="Visit Contact page">Contact</a>
+        </div>
+            <div class="columnclose">
+            <div class="nav"><a href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</a></div> <!-- Navigation hamburger icon -->
+        </div>
+      </nav>
+      <aside title="Jump To Section"> <!-- Aside section for additional content -->
+        <h2>Jump To Section</h2>
+        <ul>
+            <li><a href="#top-of-page" title="Top of Webpage">Top of Webpage</a></li>
+            <li><a href="#Article-Title" title="Top of Article">Top of Article</a></li>
+            <li><a href="#Introduction" title="Introduction">Introduction</a></li>
+            <li><a href="#NextDNS" title="Jump to NextDNS">NextDNS</a></li>
+            <li><a href="#setting-up-NextDNS" title="Jump to setting up NextDNS">Setting up NextDNS</a></li>
+            <li><a href="#configure-NextDNS" title="Jump to configuring NextDNS">Configuring NextDNS</a></li>
+            <li><a href="#Installing-NextDNS" title="Jump to installing NextDNS">Installing NextDNS</a></li>
+            <li><a href="#Android" title="Jump to Installing NextDNS on an Android device">Android device</a></li>
+            <li><a href="#IOS" title="Jump to Installing NextDNS on iOS and iPadOS">iOS and iPadOS devices</a></li>
+            <li><a href="#unblocking-domains" title="Jump to unblocking domains">Whitelisting domains</a></li>
+        </ul>        
+    </aside>    
+    <article title="Main Article Content"> <!-- Main article content -->
+        <h1 id="Article-Title">Blocking advertisements on your mobile phone</h1>
+            <h2 id="Introduction">Introduction</h2>
+                <p>Ads are everywhere on modern day devices, especially on your mobile phone but did you know that you can easily block ads on your mobile phone and other internet enabled devices such as tablets and smart TVs for free.</p>
+                <p>You can use an alternative DNS server to block ads, this works by preventing your device from connecting to the malicious servers that deliver you annoying ads on your device.</p>
+                <p>Ads are annoying, they put you at risk from malware, scams, and can even alter your political views, therefore you should block them from your device.</p>
+            <h2 id="NextDNS">NextDNS</h2> 
+            <p>The NextDNS, DNS provider is my preferred DNS provider as it is free to use if you have less than 300,000 requests a month, if you exceed this limit the service will disable automatically and automatically resume at the start of the next month, therefore you don't need to pay anything to use this service.</p>
+            <p>The NextDNS service is really easy to setup and there is also a paid plan that will give you an unlimited number of requests.</p>
+            <a class="linkbutton" title="Visit the NextDNS website" href="https://nextdns.io/">NextDNS official website</a>
+            <h2 id="setting-up-NextDNS">Setting up NextDNS</h2>
+                <p>It is really easy to setup the NextDNS service, you just need to make a free account and change a few settings to ensure that the ads will be blocked on your device.</p>
+                <img src="dns_adblocker/nextDNS_homepage_try_it_now.PNG" alt="NextDNS homepage, try it now is circled.">
+                <p>You need to navigate to the NextDNS homepage, then you need to click on the "try it now" button.</p>
+                <a class="linkbutton" title="Visit the NextDNS website" href="https://nextdns.io/">NextDNS official website</a>
+                <br>
+                <img src="dns_adblocker/nextDNS_sign_up.PNG" alt="NextDNS, sign up button is highlighted.">
+                <p>You should now see a blue banner at the top of your screen, you need to click on the "sign up" button to start the account creation process.</p>
+                <img src="dns_adblocker/nextDNS_sign_up_page.PNG" alt="NextDNS sign up page, sign up button is highlighted.">
+                <p>You will now be asked to enter your email address and your password, you need to make sure that the password you enter is secure, then click "Sign up" to create your NextDNS account.</p>
+                <img src="dns_adblocker/nextDNS.PNG" alt="NextDNS">
+                <p>You should now see a screen like this, you have now successfully setup your NextDNS account. You now need to configure your NextDNS account.</p>
+            <h2 id="configure-NextDNS">Configuring NextDNS</h2>
+                    <img src="dns_adblocker/nextDNS.PNG" alt="NextDNS">
+                    <p>NextDNS does not come with the optimal settings by default, therefore you will need to configure NextDNS so that it works well for your particular needs.</p>
+                    <p>The first thing that you need to do is click on the settings button, this will allow you to configure the NextDNS service.</p>
+                    <img src="dns_adblocker/nextDNS_enable_logs.PNG" alt="enable logs is deactivated.">
+                    <p>On the settings page you will see an option to "Enable Logs", you want to deactivate this so that it looks like the image above, this prevents NextDNS from keeping a record of your internet browsing activities.</p>
+                    <img src="dns_adblocker/nextDNS_settings_performance.PNG" alt="Anonymized EDNS Client Subnet is enabled, Cache Boost is enabled, CNAME Flattening is enabled.">
+                    <p>For the performance section you need to make sure that "Anonymized EDNS Client Subnet", "Cache Boost", and "CNAME Flattening" are all enabled.</p>
+                    <img src="dns_adblocker/nextDNS_privacy.PNG" alt="The NextDNS privacy page.">
+                    <p>The next thing you need to do is navigate to the privacy page, on the privacy page you will find a button that says, "ADD A BLOCKLIST", you need to click on it and add the following blocklists:</p>
+                    <ul>
+                        <li>NextDNS Ads & Trackers Blocklist</li>
+                        <li>AdGuard DNS filter</li>
+                        <li>OISD</li>
+                        <li>AdGuard Mobile Ads filter</li>
+                        <li>EasyList</li>
+                        <li>HaGeZi - Multi PRO++</li>
+                        <li>hBlock</li>
+                    </ul>
+                    <img src="dns_adblocker/nextDNS_privacy_2.PNG" alt="The NextDNS privacy page, Block Disguised Third-Party Trackers and Allow Affiliate & Tracking Links are enabled.">
+                    <p>After you have added the blocklists, you need to scroll down to the bottom of the privacy page and enable "Block Disguised Third-Party Trackers" and "Allow Affiliate & Tracking Links".</p>
+                    <img src="dns_adblocker/nextDNS_security.PNG" alt="The NextDNS security page">
+                    <p>The last thing that you need to do to configure your NextDNS account is configuring the security settings, you need to navigate to the security page and configure the following settings listed below.</p>
+                    <p>Settings to ENABLE:</p>
+                    <ul>
+                        <li>Use Threat Intelligence Feeds</li>
+                        <li>Enable AI-Driven Threat Detection</li>
+                        <li>Enable Google Safe Browsing</li>
+                        <li>Enable Cryptojacking Protection</li>
+                        <li>Enable Homograph Attacks Protection</li>
+                        <li>Enable DGA Protection</li>
+                        <li>Block Child Sexual Abuse Material</li>
+                    </ul>
+                    <p>Settings to DISABLE:</p>
+                    <ul>
+                        <li>Enable DNS Rebinding Protection</li>
+                        <li>Enable Typosquatting Protection</li>
+                        <li>Block Newly Registered Domains (NRDs)</li>
+                        <li>Block Dynamic DNS Hostnames</li>
+                        <li>Block Parked Domains</li>
+                    </ul>
+                    <p>You have now successfully configured your NextDNS account, you can now proceed to install NextDNS onto your devices.</p>
+            <h2 id="Installing-NextDNS">Installing NextDNS on your device</h2>
+                <img src="dns_adblocker/setup.PNG" alt="The NextDNS setup page, setup guide section.">
+                <p>You can find guides on installing NextDNS on your device near the bottom of the setup page.</p>
+                    <p>There are many different ways of installing NextDNS on your device, the methods can vary from device to device, therefore you will need to follow the guide that is appropriate for the device that you wish to install the NextDNS service onto.</p>
+                <h3 id="Android">Installing NextDNS on an Android device</h3>
+                    <img src="dns_adblocker/android_guide.PNG" alt="The NextDNS setup page, Android Setup Guide.">
+                    <p>The first thing that you need to do is find your unique NextDNS private address, you can find this by viewing the "Android" setup guide in your NextDNS portal.</p>
+                    <p>Your NextDNS private address should end in ".dns.nextdns.io"</p>
+                    <p>You can install NextDNS on any Android device running Android 9 or later, this includes devices such as Android/ Google TV based smart TVs, Android tablets, and Android phones, the menus might look slightly different across different versions and devices, but the principles of this guide will still apply regardless.</p>
+                    <img src="dns_adblocker/android_settings_landing_page.png" alt="Settings app in Android 11, Network and Internet is circled.">
+                    <p>You need to open your system settings and navigate to the "Network and Internet" section.</p>
+                    <img src="dns_adblocker/android_settings_network_and_internet.png" alt="Settings app in Android 11, Network and Internet page, Private DNS is circled">
+                    <p>You need to click on "Advanced", this will provide you with a "Private DNS" option, you need to click on "Private DNS".</p>
+                    <img src="dns_adblocker/android_settings_private_dns.png" alt="Settings app in Android 11, select private dns menu">
+                    <p>You need to enter your unique NextDNS private address in the "Enter hostname of DNS provider box" and press save.</p>
+                    <p>You have successfully installed NextDNS on your Android device, to remove NextDNS simply set the "Private DNS" back to off or automatic, this will automatically remove NextDNS from your Android device.</p>
+                <h3 id="IOS">Installing NextDNS on iOS and iPadOS</h3>
+                <p>To install NextDNS on your Apple iPhone or iPad, you must be running iOS 14 or newer, you will also need to visit the NextDNS website using Safari and sign in with the account that you previously created.</p>
+                <p>The appearance of this guide might not reflect your actual device as older and newer versions of iOS differ slightly in appearance and the layout is slightly different on iPadOS devices.</p>
+                <img src="dns_adblocker/ios_setup_guide.PNG" alt="The NextDNS setup page, iOS Setup Guide, apple.nextdns.io. is circled.">        
+                <p>Once you have signed in to your NextDNS account on your iOS/ iPadOS device, you should see a screen that looks like this, you need to click on the link featured in the "Configuration Profile" section.</p>
+                <img src="dns_adblocker/ios_download.PNG" alt="The NextDNS configuration profile download page.">
+                <p>You now need to download the configuration profile onto your iOS/ iPadOS device, you just need to scroll down and click on the "Download" button.</p>
+                <img src="dns_adblocker/ios_download_warning.PNG" alt="Download warning, allow is circled.">  
+                <p>You might be asked if you want to download the configuration profile, if you are you need to click "Allow".</p>
+                <img src="dns_adblocker/ios_system_settings.PNG" alt="iPhone system settings, Profile Downloaded is circled.">
+                <p>You now need to open your system settings and click on "Profile Downloaded".</p>
+                <img src="dns_adblocker/ios_system_settings_install_profile.PNG" alt="iPhone system settings, Install Profile popup, Install is circled.">
+                <p>You should now be asked if you want to install the configuration profile, you need to click "Install" to install the configuration profile.</p>
+                <img src="dns_adblocker/ios_system_settings_install_profile_warning.PNG" alt="iPhone system settings, Install Profile warning popup, Install is circled.">
+                <p>You might see this warning, this is because NextDNS will be able to filter and monitor your internet activities, you need to click "Install" to continue.</p>
+                <p>You have now successfully installed the NextDNS configuration profile on your iOS/ iPadOS device, to remove NextDNS from your device you need to remove the NextDNS configuration profile from your device.</p>
+            <h2 id="unblocking-domains">Whitelisting domains and fixing errors</h2> 
+                <img src="dns_adblocker/dns_error.PNG" alt="DNS resolve error IP address could not be found.">
+                <p>You might find that some webpages are no longer working once you have installed and activated the NextDNS service on your device, you might see errors such as the one displayed above, to resolve this issue you will need to whitelist the domain so that it is not incorrectly blocked.</p>
+                <img src="dns_adblocker/whitelist.PNG" alt="NextDNS whitelist/ allowlist page.">
+                <p>To allow a particular domain you need to open the whitelist/ allowlist page in your NextDNS portal, you then need to enter the domain into the "Add a domain" text box.</p>
+                <p>You can find the domain you need to whitelist in the URL bar, for example the URL of this webpage is "https://<strong>hackbototechtips.github.io</strong>/mobile_tips/dns_adblocker.html", meaning that the domain you would need to unblock would be "hackbototechtips.github.io"</p>
+            
+            
+            
+            <hr>
+        <p>Page Updated: 26/06/2024</p>
+        <p>Page Author: Hackboto</p>
+    </article>
+    <footer class="asidefooter" title="Website Footer"> <!-- Footer section -->
+        <div class="footertext">
+            <p>©2024 Hackboto Tech Tips All rights reserved.</p> <!-- Copyright notice -->
+        </div>
+        <div class="footerbuttons">
+            <a href="../map.html" title="Go to Sitemap">Sitemap</a> <!-- Link to sitemap -->
+            <a href="../legal.html" title="Go to Legal">Legal</a> <!-- Link to Legal Page -->
+        </div>
+    </footer> 
+</body>
+</html>
