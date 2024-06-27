@@ -94,9 +94,9 @@ img:not(.enlarged-image):hover {
     cursor: pointer;
     font-size: 200%;
     border-radius: 100%;
-    width: 2em;
-    height: 2em;
     transition: 0.2s;
+    padding: 1rem 2rem;
+    width:fit-content;
     text-align: center;
 }
 
