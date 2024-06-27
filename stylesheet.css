@@ -175,7 +175,7 @@ header {
 }
 /* Navigation Bar */
 nav {
-    background: rgba(42, 42, 42, 0.8);
+    background: rgba(13, 13, 13, 0.622);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
     position: -webkit-sticky; /* Safari 12 and older*/
