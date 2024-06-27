@@ -175,14 +175,14 @@ header {
 }
 /* Navigation Bar */
 nav {
-    background: rgba(13, 13, 13, 0.622);
+    background: rgba(231, 231, 231, 0.622);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
     position: -webkit-sticky; /* Safari 12 and older*/
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 0 8px 4px 8px;
+    padding: 4px 8px 4px 8px;
 }
 .nav a {
     padding: 8px 16px;
@@ -639,6 +639,11 @@ th {
     .sitemap {
         background-color: #222222;
         color: #ffffff;
+    }
+    nav {
+        background: rgba(13, 13, 13, 0.622);
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
     }
 }
 pre {
