@@ -84,7 +84,7 @@ img:not(.enlarged-image):hover {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: #ffffffbc;
+    background-color: #ffffff;
     color: #000000;
     border: none;
     cursor: pointer;
