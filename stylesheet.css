@@ -51,7 +51,7 @@ img:not(.enlarged-image):hover {
     z-index: 9999;
     opacity: 0; /* Start with opacity 0 for fade-in effect */
     animation: fadeIn 0.5s ease forwards;
-    
+    border-radius: 0;
 }
 
 @keyframes fadeIn {
@@ -92,7 +92,7 @@ img:not(.enlarged-image):hover {
     background: linear-gradient(#333333, #111111);
     border: solid #222222;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 200%;
     border-radius: 100%;
     width: 2em;
     height: 2em;
