@@ -38,7 +38,7 @@
     <!-- Upgrading to Windows 11 -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/upgrading_to_windows11.html</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2024-06-28</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
@@ -53,6 +53,13 @@
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/adblocker.html</loc>
         <lastmod>2024-06-16</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!--Finding your WDDM version-->
+    <url>
+        <loc>https://hackbototechtips.github.io/pc_tips/check_wddm_version.html</loc>
+        <lastmod>2024-06-28</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>

@@ -77,11 +77,14 @@
             <img src="upgrading_to_windows11/open_check_popcnt.png" alt="Download Menu">
             <p>Once you have downloaded the check_popcnt.exe program, you just need to open it, simply click 'Open file' from the download menu or navigate to the download location and open it from there.</p>
             <img src="upgrading_to_windows11/popcntsupported.png" alt="POPCNT is supported on this processor">
-            <p>When you run the check_popcnt.exe program you should see a message that reads 'POPCNT is supported on this processor', if you see a message that reads this and looks like the image above, you can install Windows 11 on your unsupported PC.</p>
+            <p>When you run the check_popcnt.exe program you should see a message that reads 'POPCNT is supported on this processor', if you see a message that reads this and looks like the image above, you can install Windows 11 on your unsupported PC provided that it supports the WDDM 2.0 display driver model.</p>
             <p><strong>Your PC must also support WDDM 2.0 graphics drivers or later otherwise file explorer and other system apps with have rendering issues. PCs that shipped with Windows 10 (2015+) should support WDDM 2.0 or later.</strong></p>
+            <p>You can find your WDDM driver model version by following my "Finding your WDDM version" guide.</p>
+            <a class="linkbutton" href="pc_tips/check_wddm_version.html" title="Learn about checking your WDDM driver version">Finding your WDDM version</a>
+            <p><strong>If you are using a desktop PC that supports POPCNT but lacks the WDDM 2.0 driver model, you will likely be able to upgrade your GPU, if you are using a laptop you will need to replace the entire machine or consider switching to an alternative OS such as ChromeOS Flex, Linux Mint, Ubuntu, etc.</strong></p>
             <img src="upgrading_to_windows11/no_popcnt.png" alt="POPCNT is NOT supported on this processor">
-            <p>If your PC has this message 'POPCNT is NOT supported on this processor', you will be unable to upgrade to the latest version of Windows 11 and you will no longer be receiving securzity updates on Windows 10 after 2025, in this instance I would consider replacing your PC within the next year to stay secure.</p>
-            <h3 id="installing-unsupported">Installing Windows 11 on unsupported computer.</h3>
+            <p>If your PC has this message 'POPCNT is NOT supported on this processor', you will be unable to upgrade to the latest version of Windows 11 and you will no longer be receiving security updates on Windows 10 after 2025, in this instance I would consider replacing your PC within the next year to stay secure or switch to an alternative OS such as ChromeOS Flex, Linux Mint, Ubuntu, etc.</p>
+            <h3 id="installing-unsupported">Installing Windows 11 on an unsupported computer</h3>
             <p><strong>This step is only for those who have an unsupported computer that is capable of running Windows 11</strong></p>
             <p>There is a tool available to bypass the Windows 11 arbitrary system requirements on PCs that are capable of running Windows 11, the tool is called 'bypass_windows11_requirements.cmd', you can download it from the link below.</p>
             <a class="linkbutton" title="Download bypass_windows11_requirements.cmd" href="https://github.com/H90HSORH0J30JHDSRH/hackbototechtipsfiles/releases/download/downloads/bypass_windows11_requirements.cmd">Download bypass_windows11_requirements.cmd</a>
@@ -128,7 +131,7 @@
             <p>Debloating your computer system is a really straight forward process, you can learn about the benefits of debloating your computer system, and how you can do it by visiting my guide which is linked below.</p>
             <a class="linkbutton" href="https://hackbototechtips.github.io/pc_tips/windows_debloat.html" title="Visit my guide on debloating Windows 11 24H2">Guide on Debloating Windows 11 24H2</a>
             <hr>
-        <p>Page Updated: 08/06/2024</p>
+        <p>Page Updated: 28/06/2024</p>
         <p>Page Author: Hackboto</p>
     </article>
     <footer class="asidefooter" title="Website Footer"> <!-- Footer section -->
