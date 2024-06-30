@@ -167,7 +167,6 @@ header {
 }
 /* Navigation Bar */
 nav {
-    position: -webkit-sticky; /* Safari <12*/
     position: sticky;
     top: 0;
     z-index: 1;
