@@ -73,7 +73,7 @@
         <!--Blocking ads using DNS-->
     <url>
         <loc>https://hackbototechtips.github.io/mobile_tips/dns_adblocker.html</loc>
-        <lastmod>2024-06-26</lastmod>
+        <lastmod>2024-07-01</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
@@ -105,7 +105,7 @@
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Download PopCnt Checker -->
+    <!-- Download Computer Optimiser Checker -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/computer_optimiser.html</loc>
         <lastmod>2024-06-08</lastmod>
