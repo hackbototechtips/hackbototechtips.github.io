@@ -186,11 +186,6 @@ nav {
     display:inline-block;
     border-radius: 10px;
 }
-.nav a.active {
-    background: #000000;
-    color: #ffffff;
-    font-weight: bold;
-}
 li.nav {
     display: inline;
     padding: 0;
@@ -266,6 +261,12 @@ li.nav {
     padding: 5px;
     margin: 5px;
 }
+/*Dark buttons*/
+ .sitemap a, .linkbutton, .contact-form input[type="submit"], .nav a, .modal .close-button{
+    color: #000000;
+    border: solid #00a4f0;
+    background: linear-gradient(#ffffff, #dadada, #d6d6d6);
+}
 /*Button hover animation*/
 .articlecolumn a:hover, .linkbutton:hover, .nav a:hover, .contact-form input[type="submit"]:hover, footer a:hover, .sitemap a:hover, aside a:hover, .modal .close-button:hover{
     color: #ffffff;
@@ -274,11 +275,10 @@ li.nav {
     text-decoration: underline;
     box-shadow: 0 4px 10px 0 #007BFF;
 }
-/*Dark buttons*/
- .sitemap a, .linkbutton, .contact-form input[type="submit"], .nav a, .modal .close-button {
-    color: #000000;
-    border: solid #00a4f0;
-    background: linear-gradient(#ffffff, #dadada, #d6d6d6);
+.nav a.active {
+    background: #000000;
+    color: #ffffff;
+    font-weight: bold;
 }
 /*Light buttons*/
 footer a, .articlecolumn a{
