@@ -22,42 +22,6 @@ function updateAsideHeight() {
 window.addEventListener('resize', updateAsideHeight);
 window.addEventListener('load', updateAsideHeight);
 
-(function() {
-function isiPadInLandscape() {
-  var ua = navigator.userAgent;
-  var isiPad = /iPad/.test(ua) && !window.MSStream;
-  var isLandscape = Math.abs(window.orientation) === 90;
-  return isiPad && isLandscape;
-}
-
-function isOldSafari() {
-  var ua = navigator.userAgent;
-  var isSafari = ua.indexOf('Safari') !== -1 && ua.indexOf('Version') !== -1;
-  if (isSafari) {
-    var versionMatch = ua.match(/Version\/([\d.]+)/);
-    if (versionMatch) {
-      var version = parseFloat(versionMatch[1]);
-      return version < 10;
-    }
-  }
-  return false;
-}
-
-function updateSafariClass() {
-  if (isiPadInLandscape() && isOldSafari()) {
-    document.documentElement.classList.add('safari9');
-  } else {
-    document.documentElement.classList.remove('safari9');
-  }
-}
-
-// Initial check
-updateSafariClass();
-
-// Listen for orientation changes
-window.addEventListener('orientationchange', updateSafariClass);
-})();
-
 document.addEventListener('DOMContentLoaded', function() {
   // Get all <img> elements on the page
   const images = document.getElementsByTagName('img');
