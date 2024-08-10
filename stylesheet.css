@@ -325,16 +325,8 @@ footer a, .articlecolumn a{
     min-width: 45ch;
     margin: 1%;
     padding-bottom: 8px;
-    transition: all 0.3s ease-out;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-color: #0000009b;
-    background-blend-mode: multiply;
-}
-.articlecolumn img {
-    max-width: 75%;
-    height: auto;
 }
 .articlecolumn a {
     width: 85%;
