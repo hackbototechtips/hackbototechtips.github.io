@@ -12,9 +12,6 @@ html {
 @view-transition {
   navigation: auto;
 }
-::view-transition-group(*) {
-    animation-duration: 0.15s;
-  }
 /* Style */ 
 p, li {
     max-width: 85ch;
