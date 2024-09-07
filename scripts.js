@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
               modal.remove();
               // Reset opacity of original image
               imageElement.style.opacity = '1';
-          }, 300); // Match the duration of the fade-out animation
+          }, 100); // Match the duration of the fade-out animation
       });
 
       modal.appendChild(enlargedImage);
