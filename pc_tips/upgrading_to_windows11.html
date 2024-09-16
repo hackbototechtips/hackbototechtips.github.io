@@ -37,9 +37,7 @@
             <li><a href="#Introduction" title="Introduction">Introduction</a></li>
             <li><a href="#how-to-tell-if-supported" title="Jump to telling if my PC is supported">Telling if your PC is supported</a></li>
             <li><a href="#pc-health-check" title="Jump to using the PC Health Check">Using the PC Health Check</a></li>
-            <li><a href="#Unsupported-pc" title="Jump to Unsupported PC section">Unsupported PC</a></li>
-            <li><a href="#POPCNT" title="Jump to POPCNT check">POPCNT Checker</a></li>
-            <li><a href="#installing-unsupported" title="Jump to Installing Windows 11 on unsupported computer">Installing Windows 11 on unsupported computer</a></li>
+            <li><a href="#Unsupported-pc" title="Jump to Unsupported PC section">My PC is unsupported</a></li>
             <li><a href="#downloading-installing-windows-11" title="Jump to Downloading and Installing Windows 11">Downloading and Installing Windows 11</a></li>
             <li><a href="#what-to-do-after-upgrading" title="Jump to what you need to do after upgrading to Windows 11">What you need to do after upgrading</a></li>
         </ul>        
@@ -64,59 +62,55 @@
                 <p><strong>If you see a message telling you that "This PC meets Windows 11 requirements" you can skip the next steps and jump straight to Downloading and Installing Windows 11.</strong></p>
                 <p>If you see anything else, this means that your PC is not officially supported but you can probably still run it anyway, read the 'What to do if my PC is unsupported?' section for more information.</p>
             <h2 id="Unsupported-pc">What to do if my PC is unsupported?</h2> 
-                <p>If your PC is not officially supported for Windows 11 you might still be able to run it without any issues on your existing PC, to determine if your PC is capable of running Windows 11 you need to find out if it supports a feature called POPCNT as this is a new hardware requirement that Windows 11 has introduced, most computers newer than 2011 support this feature.</p>
-                <p>I have created a special program called 'check_popcnt.exe' that can detect if your computer supports this feature, you can download it from via the link below.</p>
-                <a class="linkbutton" title="Visit download page for POPCNT Checker." href="https://hackbototechtips.github.io/download_centre/popcnt_checker.html">Visit POPCNT Checker Download Page</a>
-            <h3 id="POPCNT">Using check_popcnt.exe</h3>
-            <img src="upgrading_to_windows11/open_check_popcnt.png" alt="Download Menu">
-            <p>Once you have downloaded the check_popcnt.exe program, you just need to open it, simply click 'Open file' from the download menu or navigate to the download location and open it from there.</p>
-            <img src="upgrading_to_windows11/popcntsupported.png" alt="POPCNT is supported on this processor">
-            <p>When you run the check_popcnt.exe program you should see a message that reads 'POPCNT is supported on this processor', if you see a message that reads this and looks like the image above, you can install Windows 11 on your unsupported PC provided that it supports the WDDM 2.0 display driver model.</p>
-            <p><strong>Your PC must also support WDDM 2.0 graphics drivers or later otherwise file explorer and other system apps with have rendering issues. PCs that shipped with Windows 10 (2015+) should support WDDM 2.0 or later.</strong></p>
-            <p>You can find your WDDM driver model version by following my "Finding your WDDM version" guide.</p>
-            <a class="linkbutton" href="check_wddm_version.html" title="Learn about checking your WDDM driver version">Finding your WDDM version</a>
-            <p><strong>If you are using a desktop PC that supports POPCNT but lacks the WDDM 2.0 driver model, you will likely be able to upgrade your GPU, if you are using a laptop you will need to replace the entire machine or consider switching to an alternative OS such as ChromeOS Flex, Linux Mint, Ubuntu, etc.</strong></p>
-            <img src="upgrading_to_windows11/no_popcnt.png" alt="POPCNT is NOT supported on this processor">
-            <p>If your PC has this message 'POPCNT is NOT supported on this processor', you will be unable to upgrade to the latest version of Windows 11 and you will no longer be receiving security updates on Windows 10 after 2025, in this instance I would consider replacing your PC within the next year to stay secure or switch to an alternative OS such as ChromeOS Flex, Linux Mint, Ubuntu, etc.</p>
-            <h3 id="installing-unsupported">Installing Windows 11 on an unsupported computer</h3>
-            <p><strong>This step is only for those who have an unsupported computer that is capable of running Windows 11</strong></p>
-            <p>There is a tool available to bypass the Windows 11 arbitrary system requirements on PCs that are capable of running Windows 11, the tool is called 'bypass_windows11_requirements.cmd', you can download it from the link below.</p>
-            <a class="linkbutton" title="Download bypass_windows11_requirements.cmd" href="https://github.com/H90HSORH0J30JHDSRH/hackbototechtipsfiles/releases/download/downloads/bypass_windows11_requirements.cmd">Download bypass_windows11_requirements.cmd</a>
+                <p>If your PC is not officially supported for Windows 11 you will be able to run Windows 11 on your computer system if you meet the following core requirements:</p>
+                <ul>
+                    <li>Your PC supports POPCNT.</li>
+                    <li>Your PC uses WDDM 2.0 display drivers.</li>
+                </ul>
+                <p>You can check if your PC supports POPCNT using my POPCNT Checker (check_popcnt.exe). Visit the POPCNT Checker download page to download the program and find instructions on using it via the link below.</p>
+                <a class="linkbutton" title="Visit the POPCNT Checker download page." href="https://hackbototechtips.github.io/download_centre/popcnt_checker.html">POPCNT Checker Download Page</a>
+                <p>For a stable Windows 11 experience, your PC must use WDDM 2.0 display drivers or higher. You can find your WDDM driver model version by following my "Finding your WDDM version" guide.</p>
+                <a class="linkbutton" href="check_wddm_version.html" title="Learn about checking your WDDM driver version">Finding your WDDM version</a>
+                <p>If you find that your PC does not have WDDM 2.0 display drivers or later, or does not support POPCNT, you will need to replace your PC before October 2025 to stay secure or consider switching to an alternative OS such as Ubuntu, Linux Mint, ChromeOS Flex, etc.</p>
+                <p>If your PC is unsupported by Windows 11 but is meets the core requirements that I have outlined, you can still upgrade to Windows 11, but you will need to bypass the system requirements.</p>
+                <p>You can bypass the Windows 11 system requirements using the "bypass_windows11_requirements.cmd" tool, this tool will trick the Windows 11 installer into thinking that your computer is supported, once you have run the tool you can upgrade to Windows 11 in the same way as any "supported" PC.</p>
+                <p>You can download the "bypass_windows11_requirements.cmd" tool using the link below.</p>
+                <a class="linkbutton" title="Download bypass_windows11_requirements.cmd" href="https://github.com/H90HSORH0J30JHDSRH/hackbototechtipsfiles/releases/download/downloads/bypass_windows11_requirements.cmd">Download bypass_windows11_requirements.cmd</a>
             <br>
-            <img src="upgrading_to_windows11/bypass_installed.png" alt="Skip TPM Check on Dynamic Update V10 INSTALLED run again to remove.">
-            <p>The bypass_windows11_requirements.cmd tool is really easy to use, you just need to run it and it will automatically install 'Skip TPM Check on Dynamic Update V10' to your computer. If you see a screen like the one above, the bypass has been successfully installed onto your computer and you can proceed to the Downloading and Installing Windows 11 section.</p>
-            <p>If you saw a different message to the one that is demonstrated above, you will need to run the bypass_windows11_requirements.cmd again as the program works as an installer and uninstaller in one, this means that you run the program once and it will install the bypass, you run it a 2nd time and it will remove the patch, the 3rd time reinstalls the patch, etc.</p>
+            <img src="upgrading_to_windows11/bypass_installed.webp" alt="Skip TPM Check on Dynamic Update V10 INSTALLED run again to remove.">
+            <p>The bypass_windows11_requirements.cmd tool is really easy to use, you just need to run it, and it will automatically install 'Skip TPM Check on Dynamic Update V10' to your computer. If you see a screen like the one above, the bypass has been successfully installed onto your computer and you can proceed to the Downloading and Installing Windows 11 section.</p>
+            <p>If you see a different message to the one that is demonstrated above, you will need to run the "bypass_windows11_requirements.cmd" again as the program works as an installer and uninstaller in one, this means that you run the program once and it will install the bypass, you run it a 2nd time and it will remove the patch, the 3rd time reinstalls the patch, etc.</p>
         <h2 id="downloading-installing-windows-11">Downloading and Installing Windows 11</h2>
-        <p>Windows 11 is available as an upgrade from Windows 10, this means that all of your files and applications should carry over when you upgrade, the upgrade is free for both supported and unsupported PCs.</p>
-        <p>You can download the official version of Windows 11 from the official Microsoft website via the link below.</p>
-        <a class="linkbutton" title="Visit Windows 11 Download page" href="https://www.microsoft.com/software-download/windows11#:~:text=Download%20Windows%2011%20Disk%20Image%20(ISO)%20for%20x64%20devices">Visit Windows 11 Download Page.</a>
-        <br>
-        <img src="upgrading_to_windows11/download_windows_11_disk_iso.png" alt="See the section that says Download Windows 11 Disk Image (ISO) for x64 devices.">
-        <p>Make sure you download from the third option down from the top, like in the image above, you then need to click the select download box.</p>
-        <img src="upgrading_to_windows11/set_product_language.png" alt="Set the product language">
-        <p>Next you need to select the product language, this must be the same as your current Windows 10, follow the instructions given, then select the correct product language, then click 'Confirm'.</p>
-        <img src="upgrading_to_windows11/64bitdownload.png" alt="Download Windows 11. 64-Bit Download.">
-        <p>Now you can download the Windows 11 ISO, this will take a while depending on your internet bandwidth as the file is roughly between 3-7GB in size. On an average you should expect it to take around 10-25 minutes to download.</p>
-        <img src="upgrading_to_windows11/iso_setup.png" alt="Click on setup.exe">
-        <p>When the ISO file has downloaded, you need to open it, this will open a virtual DVD, from within the virtual you need to double click on the 'setup.exe' file.</p>
-        <img src="upgrading_to_windows11/windows_11_setup.png" alt="Install Windows 11 screen, says supported PC on Install Windows 11 and Unsupported PC on Install Windows Server">
-        <p>After opening the 'setup.exe' file, you should now see a screen that says 'Install Windows 11' or 'Install Windows Server', on this screen you need to click on 'Next'</p>
-        <p><strong>If you are upgrading to Windows 11 on an unsupported PC, do not worry if it says 'Windows Server' instead of 'Windows 11', this is because the installer has been tricked into thinking it is installing Windows Server to bypass the arbitrary system requirements.</strong></p>
-        <img src="upgrading_to_windows11/terms.png" alt="Windows 11, Applicicable notices and licence terms.">
-        <p>Next, you need to read through the 'Applicable notices and licence terms', then click 'Accept' to continue.</p>
-        <img src="upgrading_to_windows11/choose_what_to_keep.png" alt="Windows 11, Choose what to keep, Keep files, settings, and apps is selected.">
-        <p>If you are asked to 'Choose what to keep' <strong>make sure you select 'Keep files, settings, and apps'</strong>, if you do not select this option all of your files might be deleted along with any applications you have installed. Click 'Next' to continue.</p>
-        <img src="upgrading_to_windows11/ready_to_install.png" alt="Windows 11, Ready to install.">
-        <p>At this point, you should see a screen that says 'Ready to install', now just click the 'Install' button and you will begin upgrading to Windows 11.</p>
-        <img src="upgrading_to_windows11/installing_Windows_Server.png" alt="Installing Windows Server">
-        <p><strong>If you see a screen that says 'Installing Windows Server' do not be alarmed, this is normal when upgrading to Windows 11 on an unsupported PC.</strong></p>
-        <p>The upgrade to Windows 11 can take a very long time, especially if you have an older computer. The upgrade process can be as little as 10 minutes or take several hours to complete, just be patient and make sure that your device is plugged in and on charge.</p>
+            <p>Windows 11 is available as an upgrade from Windows 10, this means that all of your files and applications should carry over when you upgrade, the upgrade is free for both supported and unsupported PCs.</p>
+            <p>You can download the official version of Windows 11 from the official Microsoft website via the link below.</p>
+            <a class="linkbutton" title="Visit Windows 11 Download page" href="https://www.microsoft.com/software-download/windows11#:~:text=Download%20Windows%2011%20Disk%20Image%20(ISO)%20for%20x64%20devices">Visit Windows 11 Download Page</a>
+            <br>
+            <img src="upgrading_to_windows11/download_windows_11_disk_iso.webp" alt="See the section that says Download Windows 11 Disk Image (ISO) for x64 devices.">
+                <p>Make sure you download from the third option down from the top, like in the image above, you then need to click "Download Now."</p>
+            <img src="upgrading_to_windows11/set_product_language.webp" alt="Set the product language">
+                <p>Next you need to select the product language, this must be the same as your current Windows 10 install. Follow the instructions provided for finding your product language, then select the appropriate product language, then click "Confirm."</p>
+            <img src="upgrading_to_windows11/64bitdownload.webp" alt="Download Windows 11. 64-Bit Download.">
+                <p>Now you can download the Windows 11 ISO, this will take a while depending on your internet bandwidth as the file is roughly between 3-7GB in size. On an average you should expect it to take around 10-25 minutes to download.</p>
+            <img src="upgrading_to_windows11/iso_setup.webp" alt="Click on setup.exe">
+                <p>When the ISO file has downloaded, you need to open it, this will open a virtual DVD, from within the virtual DVD you need to double click on the "setup.exe" file.</p>
+            <img src="upgrading_to_windows11/windows_11_setup.webp" alt="Install Windows 11 screen, says supported PC on Install Windows 11 and Unsupported PC on Install Windows Server">
+                <p>After opening the "setup.exe" file, you should now see a screen that says, "Install Windows 11" or "Install Windows Server", on this screen you need to click on "Next."</p>
+                <p><strong>Do not worry if it says "Windows Server" instead of "Windows 11", the installer will still install Windows 11 regardless of what it says, this is because the installer has been tricked into thinking it is installing Windows Server as a part of the system requirement bypass.</strong></p>
+            <img src="upgrading_to_windows11/terms.webp" alt="Windows 11, Applicicable notices and licence terms.">
+                <p>Next, you need to read through the "Applicable notices and licence terms", then click "Accept" to continue.</p>
+            <img src="upgrading_to_windows11/choose_what_to_keep.webp" alt="Windows 11, Choose what to keep, Keep files, settings, and apps is selected.">
+                <p>If you are asked to "Choose what to keep" make sure you <strong>select "Keep files, settings, and apps"</strong>, if you do not select this option all your files will be deleted along with any applications you have installed. Click "Next" to continue.</p>
+            <img src="upgrading_to_windows11/ready_to_install.webp" alt="Windows 11, Ready to install.">
+                <p>At this point, you should see a screen that says "Ready to install", now just click the "Install" button and your PC will begin upgrading to Windows 11.</p>
+            <img src="upgrading_to_windows11/installing_Windows_Server.webp" alt="Installing Windows Server">
+                <p><strong>If you see a screen that says "Installing Windows Server" do not be alarmed, this is normal when upgrading to Windows 11 on an unsupported PC.</strong></p>
+                <p>The upgrade to Windows 11 can take a very long time, especially if you have an older computer. The upgrade process can be as little as 10 minutes or take several hours to complete, just be patient and make sure that your device is plugged in and on charge.</p>
         <h2 id="what-to-do-after-upgrading">What you need to do after upgrading to Windows 11</h2>
             <p>After your computer has finished upgrading to Windows 11, there are three things that I recommend you do: </p>
                 <ol>
-                    <li>Check for Windows Updates</li>
-                    <li>Optimise your computer</li>
-                    <li>Debloat your computer</li>
+                    <li>Check for Windows Updates.</li>
+                    <li>Optimise your computer.</li>
+                    <li>Debloat your computer.</li>
                 </ol>
             <p>Checking for updates is really easy on Windows 11 as you just need to open the Settings app and navigate to 'Windows Update', alternatively you can use the link below to check for Windows updates.</p>
             <a class="linkbutton" title="Launch Settings: Check for Windows updates." href="ms-settings:windowsupdate">Check for Windows updates</a>
@@ -125,7 +119,7 @@
             <p>Debloating your computer system is a really straight forward process, you can learn about the benefits of debloating your computer system, and how you can do it by visiting my guide which is linked below.</p>
             <a class="linkbutton" href="https://hackbototechtips.github.io/pc_tips/windows_debloat.html" title="Visit my guide on debloating Windows 11 24H2">Guide on Debloating Windows 11 24H2</a>
             <hr>
-        <p>Page Updated: 07/09/2024</p>
+        <p>Page Updated: 16/09/2024</p>
         <p>Page Author: Hackboto</p>
     </article>
     <footer class="asidefooter" title="Website Footer"> <!-- Footer section -->
