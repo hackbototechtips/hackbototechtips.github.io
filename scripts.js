@@ -10,17 +10,27 @@ function navHamburger() {
 
 // Fixes the aside bar
 function updateAsideHeight() {
-  const headerHeight = document.querySelector('header').offsetHeight;
-  const navHeight = document.querySelector('nav').offsetHeight;
-  const aside = document.querySelector('aside');
-  const totalHeight = headerHeight + navHeight;
-  const availableHeight = window.innerHeight - totalHeight;
-  aside.style.top = `${totalHeight}px`;
-  aside.style.height = `${availableHeight}px`;
-}
-
-window.addEventListener('resize', updateAsideHeight);
-window.addEventListener('load', updateAsideHeight);
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    const aside = document.querySelector('aside');
+  
+    if (!aside) {
+      // If no aside element is found, exit the function
+      return;
+    }
+  
+    const headerHeight = header ? header.offsetHeight : 0;
+    const navHeight = nav ? nav.offsetHeight : 0;
+    const totalHeight = headerHeight + navHeight;
+    const availableHeight = window.innerHeight - totalHeight;
+    
+    aside.style.top = `${totalHeight}px`;
+    aside.style.height = `${availableHeight}px`;
+  }
+  
+  window.addEventListener('resize', updateAsideHeight);
+  window.addEventListener('load', updateAsideHeight);
+  
 
 document.addEventListener('DOMContentLoaded', function() {
   // Get all <img> elements on the page
