@@ -103,7 +103,7 @@ img:not(.enlarged-image):hover {
     cursor: pointer;
 }
 /* Rounded corners */
-div, aside a, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
+div, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
     border-radius: 10px;
 }
 /*Not Rounded*/
@@ -249,13 +249,13 @@ button:hover {
     margin: 5px;
 }
 /*Blue buttons*/
- .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, aside a, .articlecolumn a{
+ .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a{
     color: #ffffff;
     border: solid 4px #007BFF;
     background: linear-gradient(#007BFF, #006ee4, #0024c4);
 }
 /*Button hover animation*/
-.articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, aside a:hover, .modal .close-button:hover, .articlecolumn a:hover{
+.articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{
     color: #000000;
     background: linear-gradient(#ffffff, #dadada, #d6d6d6);
     border: solid 4px #007BFF;
@@ -341,11 +341,24 @@ aside {
     overflow-y: auto;
     box-sizing: border-box;
 }
+aside li {
+    border-left: 6px solid #006ee4;
+    margin: 3px 0;
+}
+aside ul {
+    list-style-type: none;
+}
 aside a {
-    width: 90%;
-    padding: 5px 4px 5px 9px;
-    margin: 3px 0 3px 1%;
+    width: 99%;
+    padding: 10px 0;
+    margin: 0 0 0 1%;
     display:inline-block;
+    color: #000000;
+}
+aside a:hover {
+    background: linear-gradient(#007BFF, #006ee4, #0024c4);
+    color: #ffffff;
+    background: linear-gradient(#007BFF, #006ee4, #0024c4);
 }
 aside h2 {
     margin: 3%;
@@ -482,10 +495,6 @@ th {
 }
 /* Responsive design Mobile */
 @media screen and (max-width: 600px) {
-    /*Logo hidden on mobile devices */
-    .logo {
-        display: none;
-    }
     /* Less overflow on small screens*/
     body {
         word-wrap: break-word;
@@ -523,11 +532,11 @@ th {
     article h1 {
         font-size: 200%;
     }
-    article h2, h3 {
-        text-align: center;
-    }
     li h3 {
         text-align: left;
+    }
+    article img {
+        width: 100%;
     }
 }
 .linkwhite {
@@ -563,12 +572,15 @@ th {
         color: #ffffff;
         background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);
     }
-    .articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, aside a:hover, .modal .close-button:hover, .articlecolumn a:hover{
+    .articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{
         color: #ffffff;
         background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);
     }
     .contact-form {
         background: linear-gradient(#1f1f1f, #3e3e3e, #313131);
+        color: #ffffff;
+    }
+    aside a{
         color: #ffffff;
     }
 }
