@@ -13,35 +13,36 @@
     <title>Black Screen HW Acceleration Fix | Hackboto Tech Tips</title>
 </head>
 <body>
-    <header id="top-of-page"> <!-- Header section -->
-        <p>Hackboto Tech Tips</p>
-    </header>
-    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-        <div class="columnnav">
-            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-            <a class="active" href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
-            <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-            <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-            <a href="../contact.html" title="Visit Contact page">Contact</a>
-        </div>
+    <div class="sticky">
+        <header> <!-- Header section -->
+            <p>Hackboto Tech Tips</p> <!-- Header text -->
+        </header>
+        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+            <div class="columnnav">
+                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+                <a href="../pc_tips.html" class="active" title="Explore tips and tricks for your PC">PC Guides</a>
+                <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+                <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+                <a href="../contact.html" title="Visit Contact page">Contact</a>
+            </div>
             <div class="columnclose">
-            <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-        </div>
-      </nav>
-      <aside title="Jump To Section"> <!-- Aside section for additional content -->
-        <h2>Jump To Section</h2>
+                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
+            </div>
+        </nav>
+    </div>
+      <aside title="Page Navigation"> <!-- Aside section for additional content -->
+        <h2>Page Navigation</h2>
         <hr>
         <ul>
-            <li><a href="#top-of-page" title="Top of Webpage">Top of Webpage</a></li>
-            <li><a href="#Article-Title" title="Top of Article">Top of Article</a></li>
+            <li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
             <li><a href="#Introduction" title="Introduction">Introduction</a></li>
-            <li><a href="#hardware-acceleration" title="Hardware Acceleration">Hardware Acceleration</a></li>
-            <li><a href="#multi-plane-overlay" title="Multi-Plane Overlay">Multi-Plane Overlay</a></li>
-            <li><a href="#registry-fix" title="Registry Fix">Registry Fix</a></li>
+            <li class="Subheading"><a href="#hardware-acceleration" title="Hardware Acceleration">Hardware Acceleration</a></li>
+            <li class="Subheading"><a href="#multi-plane-overlay" title="Multi-Plane Overlay">Multi-Plane Overlay</a></li>
+            <li class="Subheading"><a href="#registry-fix" title="Registry Fix">Registry Fix</a></li>
         </ul>        
     </aside>    
     <article title="Main Article Content"> <!-- Main article content -->
-        <h1 id="Article-Title">Fixing Black Squares and Flashing Black Screens in Applications That Use Hardware Acceleration</h1>
+        <h1 id="top-of-page">Fixing Black Squares and Flashing Black Screens in Applications That Use Hardware Acceleration</h1>
             <img src="hardware_acceleration_black_screen_fix/black_artefacts_mockup.webp" alt="an image representing black artefacts in Microsoft Office.">
                 <p class="imgdescription">The glitch causes applications that use Hardware Acceleration to have black artefacts, this image is a mock-up as the artifacts do not appear long enough to capture an example.</p>
             <h2 id="Introduction">Introduction</h2>

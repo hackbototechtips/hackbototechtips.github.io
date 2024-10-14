@@ -13,29 +13,32 @@
     <title>PC Backup Guide | Hackboto Tech Tips</title>
 </head>
 <body>
-    <header id="top-of-page"> <!-- Header section -->
-        <p>Hackboto Tech Tips</p>
-    </header>
-    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-        <div class="columnnav">
-            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-            <a class="active" href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
-            <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-            <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-            <a href="../contact.html" title="Visit Contact page">Contact</a>
-        </div>
+    <div class="sticky">
+        <header> <!-- Header section -->
+            <p>Hackboto Tech Tips</p> <!-- Header text -->
+        </header>
+        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+            <div class="columnnav">
+                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+                <a href="../pc_tips.html" class="active" title="Explore tips and tricks for your PC">PC Guides</a>
+                <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+                <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+                <a href="../contact.html" title="Visit Contact page">Contact</a>
+            </div>
             <div class="columnclose">
-            <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-        </div>
-      </nav>
-      <aside title="Jump To Section"> <!-- Aside section for additional content -->
-        <h2>Jump To Section</h2>
+                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
+            </div>
+        </nav>
+    </div>
+      <aside title="Page Navigation"> <!-- Aside section for additional content -->
+        <h2>Page Navigation</h2>
         <hr>
         <ul>
-            <li><a href="#top-of-page" title="Top of Webpage">Top of Webpage</a></li>
-            <li><a href="#Article-Title" title="Top of Article">Top of Article</a></li>
+            <li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
             <li><a href="#Introduction" title="Introduction">Introduction</a></li>
             <li><a href="#hardware" title="Jump to buying hardware">What you need to purchase</a></li>
+            <li class="Subheading"><a href="#computer-backup" title="Jump to buying computer backup hardware">Purchasing hardware to backup computer</a></li>
+            <li class="Subheading"><a href="#file-backup" title="Jump to buying file backup hardware">Purchasing hardware to backup files</a></li>
             <li><a href="#backing-up-files" title="Jump to backing up your files">Backing up your files</a></li>
             <li><a href="#backing-up-system" title="Jump to backing up your computer">Backing up your computer system</a></li>
             <li><a href="#Recovery-media" title="Jump to creating the recovery media">Creating the recovery media</a></li>
@@ -43,7 +46,7 @@
         </ul>        
     </aside>    
     <article title="Main Article Content"> <!-- Main article content -->
-        <h1 id="Article-Title">Backing Up Windows 10/ 11</h1>
+        <h1 id="top-of-page">Backing Up Windows 10/ 11</h1>
             <img src="windows_backup/computer_backup.webp" alt="an image representing secure data and a computer backup.">
                 <p class="imgdescription">Learn how you can back up your computer and your files.</p>
             <h2 id="Introduction">Introduction</h2>
@@ -54,24 +57,24 @@
                 <p>To back up your files you have two options, option one which is using cloud storage which involves using services such as iCloud, OneDrive, Dropbox, etc, the second is using a portable hard drive or flash drive.</p>
                 <p>Personally, I would advise against option one as cloud storage solutions often require a monthly or yearly subscription, therefore I advise with option two which requires you to purchase a portable hard drive or a flash drive to make a backup of your files.</p>
                 <p>The amount of storage that you need to back up your files will likely be less than that of your entire computer system, therefore you might only need a low capacity drive such as a flash drive which often provide you with a capacity of at least 32GB and can cost as little as £7 from most retailers, portable hard drives might be required if you are storing a lot of data such as photos, videos, music, etc, these will cost a bit more starting from £50 and they can be found at most retailers.</p>
-                <h3>How do I tell what capacity hard drive I need to back up my computer?</h3>
-                    <img src="windows_backup/this_pc.png" alt="an image representing the This PC screen in File Explorer.">
+                <h3 id="computer-backup">How do I tell what capacity hard drive I need to back up my computer?</h3>
+                    <img src="windows_backup/this_pc.webp" alt="an image representing the This PC screen in File Explorer.">
                     <p>It is really easy to determine the capacity you require to back up your computer system, you just need to launch "File Explorer" on your Windows 10/ 11 PC and navigate to "This PC" which can be found in the navigation pane.</p>
-                    <img src="windows_backup/list_of_drives.png" alt="an image representing the This PC screen and a list of storage drives.">
+                    <img src="windows_backup/list_of_drives.webp" alt="an image representing the This PC screen and a list of storage drives.">
                     <p>Once you are at the "This PC" page, you will see a list of all the storage drives that are attached to your computer</p>
                     <p>You will need to purchase a hard drive that is larger than the capacity shown, for example on this computer system I would need to purchase a 2TB storage drive because I have roughly 1200GB of storage capacity on my computer system and I want to have plenty of space free so that I can effectively back up this computer system at this present moment in time and in the future. A 2TB hard drive will cost between £65-£95.</p>
-                    <img src="windows_backup/list_of_drives_small.png" alt="an image representing the This PC screen and a single storage drive, 237GB is highlighted.">
+                    <img src="windows_backup/list_of_drives_small.webp" alt="an image representing the This PC screen and a single storage drive, 237GB is highlighted.">
                     <p>This is an example of a computer system with a low-capacity storage drive, this computer can only store 237GB of data, therefore a smaller capacity portable hard drive is required, for this computer I would need a 500GB portable hard drive which would cost around £45, however these low-capacity portable hard drives are becoming harder to come by so I would likely end up purchasing a larger 1TB portable hard drive which would cost around £55-£70.</p>
                     <p><strong>You will also need to purchase a small capacity USB flash drive, this is so that you can restore your PC from your backups even if your PC is no longer booting, for this you will be looking at a low-end drive with at least 8GB capacity, these can be found for as little as £7.</strong></p>
-                <h3>How do I tell what capacity flash drive/ hard drive I need to back up my files?</h3>
-                    <img src="windows_backup/libraries.png" alt="an image representing the Windows 11 libraries.">
+                <h3 id="file-backup">How do I tell what capacity flash drive/ hard drive I need to back up my files?</h3>
+                    <img src="windows_backup/libraries.webp" alt="an image representing the Windows 11 libraries.">
                     <p>Most people store their files in the built in File libraries, such as the Downloads folder, Desktop folder, Documents folder, Pictures folder, etc, so this is where you will determine the type and capacity you need to back up your files.</p>
                     <p>This is where it gets easy, just follow the steps listed below and you will be able to easily determine the capacity you require, this will allow you to also determine the type of storage drive you need.</p>
                     <ol>
                         <li>Select all of the libraries, you can do this by holding down control (ctrl) key on your keyboard and click on each of the six folders. If other folders a present ignore these as they are located within the 6 main libraries.</li>
                         <li>Once you have selected all of the libraries you then need to right click on one of the highlighted folders and then click on the properties button.</li>
                     </ol>
-                    <img src="windows_backup/properties.png" alt="an image representing the properties for the libraries on your computer, 4.45GB is highlighted.">
+                    <img src="windows_backup/properties.webp" alt="an image representing the properties for the libraries on your computer, 4.45GB is highlighted.">
                     <p>You should now see a screen that looks something like this, you need to pay attention to the "Size on disk:" as this refers to the amount of space that your files take up, as you can see on this computer system my files take up 4.45GB of space.</p>
                     <p>As a general rule of thumb, you should always get a higher capacity than you require, I would require an 8GB flash drive to store all of my files but I should opt for a larger 32GB flash drive instead for future proofing.</p>
                     <p>Follow the table below to determine the storage type you need and the capacity you need.</p>
@@ -102,7 +105,7 @@
                             <tr>
                                 <td>64GB to 128GB</td>
                                 <td>256GB</td>
-                                <td>Flash Drive</td>
+                                <td>Hard Drive</td>
                             </tr>
                             <tr>
                                 <td>128GB to 256GB</td>
@@ -132,14 +135,14 @@
                 <p>You can learn about formatting your new portable hard drive or flash drive by reading the helpful guide featured on Windows Central, link is below. You need to make sure that you are formatted in NTFS.</p>
                 <a class="linkbutton" title="Learn about formatting hard drives in Windows 10" href="https://www.windowscentral.com/how-format-new-hard-drive-windows-10">Windows Central: How to format a new hard drive on Windows 10</a>
                 <br>
-                <img src="windows_backup/copy_files.png" alt="an image representing file explorer, all 6 libraries have been selected, dragged to hard drive.">
+                <img src="windows_backup/copy_files.webp" alt="an image representing file explorer, all 6 libraries have been selected, dragged to hard drive.">
                 <p>It is really easy to back up your files in Windows 10/ 11, all you need to do is select all 6 of the libraries by holding the control (ctrl) button and clicking on them, you then just need to drag the folders to your portable hard drive/ flash drive.</p>
-                <img src="windows_backup/file_name_replace.png" alt="Image, replace or skip files, replace files in the destination is selected.">
+                <img src="windows_backup/file_name_replace.webp" alt="Image, replace or skip files, replace files in the destination is selected.">
                 <p>If you see a message that says that the destination has files with the same names, you need to click on "Replace the files in the destination", this is because you might have edited documents etc, if you know the exact files that have been modified you can click "skip these files" and manually replace the files, this will reduce the amount of time it will take for the backup to complete and reduce the amount of wear on your drive.</p>
                 <p><strong>You have now successfully made a backup of all your files, you should do this at least every three months, preferably once a month.</strong></p>
             <h2 id="backing-up-system">How do I back up my computer system?</h2>
                 <p>To back up your Windows 10/ 11 computer system, you need to have an appropriate portable hard drive that is large enough to store a complete backup of your computer system.</p>
-                <img src="windows_backup/lazesoft_recovery_suite.png" alt="an image representing the Lazesoft recovery suite.">
+                <img src="windows_backup/lazesoft_recovery_suite.webp" alt="an image representing the Lazesoft recovery suite.">
                 <p>The Lazesoft Recovery Suite is free (personal use only/ home licence) and makes it very easy to make a backup of your computer system, it might look a bit dated but it is fully compatible with Windows 11, you can use it to back up any computer that is running Windows XP or later.</p>
                 <p>You can download the free home licence version of the Lazesoft Recovery Suite using the link below.</p>
                 <a class="linkbutton" title="Download Lazesoft Recovery Suite 4.7 Home Edition." href="https://www.lazesoft.com/downloads/lsrshsetup.exe">Download Lazesoft Recovery Suite. (Home Licence)</a>
@@ -147,20 +150,20 @@
                  <p>If you have already formatted your portable hard drive as NTFS you can continue.</p>
                 <a class="linkbutton" title="Learn about formatting hard drives in Windows 10" href="https://www.windowscentral.com/how-format-new-hard-drive-windows-10">Windows Central: How to format a new hard drive on Windows 10</a>
                 <br>
-                <img src="windows_backup/lazesoft_recovery_suite_disk_image_clone.png" alt="an image representing the Lazesoft recovery suite, disk image & clone is circled.">
+                <img src="windows_backup/lazesoft_recovery_suite_disk_image_clone.webp" alt="an image representing the Lazesoft recovery suite, disk image & clone is circled.">
                 <p>Now that you have installed and launched the Lazesoft Recovery Suite, and connected your portable hard drive to the computer, you should see an option that says "Disk Image & Clone" you need to select this option.</p>
-                <img src="windows_backup/backup_(drive_to_image).png" alt="an image representing Lazesoft Recovery Suite, Backup(Drive to Image) is circled.">
+                <img src="windows_backup/backup_(drive_to_image).webp" alt="an image representing Lazesoft Recovery Suite, Backup(Drive to Image) is circled.">
                 <p>You should now see a screen that looks like this, you want to click on "Backup (Drive to Image)", this will allow you to copy and create a backup of your computer system and store it on your portable hard drive, you can restore your PC from this backup at a later point in time.</p>
-                <img src="windows_backup/backup_select_source.png" alt="an image representing Lazesoft Recovery Suite, select drive source, USB Device has been highlighted, disk 1 has been selected, four disks are displayed in total, all the partitions have been ticked.">
+                <img src="windows_backup/backup_select_source.webp" alt="an image representing Lazesoft Recovery Suite, select drive source, USB Device has been highlighted, disk 1 has been selected, four disks are displayed in total, all the partitions have been ticked.">
                 <p>You should now see a screen that looks like this, you can click on the combo box to reveal all of the drives on your system, make sure you remember the disk number and the capacity, DO NOT SELECT THE USB DEVICE as this is your portable hard drive. Once you have ticked all of the partitions you can click "Next >" to continue.</p>
-                <img src="windows_backup/backup_drive_image_type.png" alt="an image representing Lazesoft Recovery Suite, select drive image type, full backup is selected.">
+                <img src="windows_backup/backup_drive_image_type.webp" alt="an image representing Lazesoft Recovery Suite, select drive image type, full backup is selected.">
                 <p>You should now see a screen that looks like this, you should select the "full backup" option, then click the browse button to select the destination for the backup you are going to create.</p>
-                <img src="windows_backup/save_backup.png" alt="an image representing file explorer, the file name is set to 'disk1_120GB_07-06-2024', the directory is the portable hard drive.">
+                <img src="windows_backup/save_backup.webp" alt="an image representing file explorer, the file name is set to 'disk1_120GB_07-06-2024', the directory is the portable hard drive.">
                 <p>You now need to navigate to your portable hard drive directory; you also need to provide the name of your backup and click save.</p> 
                 <p>I advise you to use this naming convention disk(Num)_(capacity)_(date) as this will allow you to easily recognise the drive that the backup is for along with the date that the backup was made, for example if I was to backup disk 1 which has a storage capacity of 120GB it would be "disk1_120GB_07-06-2024" this is the best way of ensuring that you restore from the latest backups and to the correct disk.</p>
-                <img src="windows_backup/valid_destination_path.png" alt="an image representing the Lazesoft Recovery Suite, Select Destination Image Path, path has been entered, start is circled.">
+                <img src="windows_backup/valid_destination_path.webp" alt="an image representing the Lazesoft Recovery Suite, Select Destination Image Path, path has been entered, start is circled.">
                 <p>Now that you have selected a valid path and file name, you should see it in the text box, now you can start the backup process by clicking on the start button</p> 
-                <img src="windows_backup/backup_in_progress.png" alt="an image representing the Lazesoft Recovery Suite, backup in process.">
+                <img src="windows_backup/backup_in_progress.webp" alt="an image representing the Lazesoft Recovery Suite, backup in process.">
                 <p>You should see this screen, keep your PC on and plugged in whilst you are creating the backup, this might take a long time so be patient.</p>
                 <p>When you see a message that reads "The operation completed successfully." you have successfully made a backup of your computer, you can now click finish and you are done.</p>
                 <p><strong>If you have more than one storage drive on your computer, you will need to repeat this process for each of the drives, you should also make a backup of your computer at least twice a year, ideally you should make a backup every three months.</strong></p>
@@ -168,24 +171,24 @@
             <h2 id="Recovery-media">Creating the recovery media</h2>
                 <p>To create the recovery media, you need to have installed the Lazesoft Recovery Suite, you can find the download link in the "How do I back up my computer system?" section of this guide, you must also have a USB flash drive that you do not mind being erased and has at least 8GB of capacity.</p>
                 <p>You need to insert your USB flash drive prior to launching the Lazesoft Recovery Suite, if you have launched the software before doing this you will need to close and reopen it.</p>
-                <img src="windows_backup/lazesoft_recovery_suite_burn.png" alt="an image representing the Lazesoft recovery suite, burn CD/ USB disk has been highlighted.">
+                <img src="windows_backup/lazesoft_recovery_suite_burn.webp" alt="an image representing the Lazesoft recovery suite, burn CD/ USB disk has been highlighted.">
                 <p>Once you have launched the Lazesoft Recovery Suite, you need to click on "Burn CD/USB Disk".</p>
-                <img src="windows_backup/recovery_suite_usb_same_as_this_computer.png" alt="an image representing the Lazesoft recovery suite, same as this computer has been selected.">
+                <img src="windows_backup/recovery_suite_usb_same_as_this_computer.webp" alt="an image representing the Lazesoft recovery suite, same as this computer has been selected.">
                 <p>You should see a screen that looks something like this, you need to make sure the "same as this computer option has been selected", then you need to click next.</p>
-                <img src="windows_backup/bootable_media_selection.png" alt="an image representing the Lazesoft recovery suite, ISO Image has been selected, path is set to C:\Program Files (x86)\Lazesoft Recovery Suite\lsboot.iso">
+                <img src="windows_backup/bootable_media_selection.webp" alt="an image representing the Lazesoft recovery suite, ISO Image has been selected, path is set to C:\Program Files (x86)\Lazesoft Recovery Suite\lsboot.iso">
                 <p>You should see a screen that looks similar to this, you want to click on ISO Image, then click the start button.</p>
                 <p><strong>You might be asking why I am telling you to create an ISO Image instead of USB Flash, this is because the USB will not boot on modern PCs if you use the built in USB creator.</strong></p>
-                <img src="windows_backup/iso_image_created_successfully.png" alt="an image representing the Lazesoft recovery suite, The ISO image was created successfully.">
+                <img src="windows_backup/iso_image_created_successfully.webp" alt="an image representing the Lazesoft recovery suite, The ISO image was created successfully.">
                 <p>You should see this message after a few minutes, this means that the ISO was created successfully and placed in the "C:\Program Files (x86)\Lazesoft Recovery Suite\lsboot.iso" directory, now click cancel and close the Lazesoft Recovery Suite as you will not need it for the next steps.</p>
                 <p>The file required to create the bootable USB recovery tool is located at "C:\Program Files (x86)\Lazesoft Recovery Suite\lsboot.iso", you now need to download a bootable USB creator called Rufus, you can find the download link below:</p>
                 <a class="linkbutton" title="Download rufus-4.5p.exe" href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5p.exe">Download Rufus 4.5 Portable</a>
                 <br>
-                <img src="windows_backup/rufus.png" alt="an image representing the Rufus Bootable USB creator.">
+                <img src="windows_backup/rufus.webp" alt="an image representing the Rufus Bootable USB creator.">
                 <p>Once you have downloaded Rufus, you need to run it, you should now see a screen that looks like this, you want to verify that the correct USB flash drive has been chosen, then you want to click on the "select" button.</p>
-                <img src="windows_backup/select_iso.png" alt="an image representing the ISO selector, 'C:\Program Files (x86)\Lazesoft Recovery Suite\' has been entered into the address bar, 'lsboot.iso' has been entered into the file name bar">
+                <img src="windows_backup/select_iso.webp" alt="an image representing the ISO selector, 'C:\Program Files (x86)\Lazesoft Recovery Suite\' has been entered into the address bar, 'lsboot.iso' has been entered into the file name bar">
                 <p>In the address bar at the top of the window, you need to copy and paste this "C:\Program Files (x86)\Lazesoft Recovery Suite\" without the inverted comma, in the file name field you need to enter "lsboot.iso" without the inverted comma, then click the "open" button.</p>
                 <p>Now, click on the "START" button, then click "OK" on the popup that will appear, then click "OK" to Confirm that you accept that all of the data will be erased from the USB flash drive.</p>
-                <img src="windows_backup/rufus_completed.png" alt="an image representing Rufus, the USB was created successfully, ready is now displayed in the progress bar.">
+                <img src="windows_backup/rufus_completed.webp" alt="an image representing Rufus, the USB was created successfully, ready is now displayed in the progress bar.">
                 <p>When the bar at the bottom turns green and states "Ready", this means that the Bootable Recovery Media has been successfully created.</p>
                 <p><strong>If you have a legacy BIOS PC you will need to change the partition scheme from "GPT" to "MBR" in Rufus if your device is not listing the USB as a boot option in the boot menu, you will then need to run the Rufus USB creator again so that the recovery media is compatible with your PC.</strong></p>
             <h2 id="restoring-computer">How do I use the recovery media to restore my PC from a backup?</h2>
@@ -193,26 +196,26 @@
                 <p>If Windows is not booting at all, you will need to contact your PC manufacturer for more guidance, if you can boot your pc or are seeing a blue screen that says "Automatic Repair" you will be able to boot from the USB with ease.</p>
                 <p>To enter Automatic Repair mode it is really easy, you just need to power your PC off whilst it is booting up three times in a row, this will make your computer think there is a fault and it will launch the automatic repair screen.</p>
                 <p>If your computer is booting into Windows, you can boot from the USB by holding the shift button and clicking restart on either the logon screen or the start menu.</p>
-                <img src="windows_backup/automatic_recovery.png" alt="an image representing Automatic Recovery, click on Advanced options.">
+                <img src="windows_backup/automatic_recovery.webp" alt="an image representing Automatic Recovery, click on Advanced options.">
                 <p>If you have chosen to launch Automatic Recovery, you need to click on advanced options.</p>
-                <img src="windows_backup/choose_an_option.png" alt="an image representing the Choose an option screen, Use a device is selected.">
+                <img src="windows_backup/choose_an_option.webp" alt="an image representing the Choose an option screen, Use a device is selected.">
                 <p>You should now see an option that says "Use a device" this is the option you want as it should allow you to boot from the portable USB.</p>
-                <img src="windows_backup/use_a_device.png" alt="an image representing the Use device screen, EFI USB Device.">
+                <img src="windows_backup/use_a_device.webp" alt="an image representing the Use device screen, EFI USB Device.">
                 <p>You should now see a screen that looks something like this, you need to click the EFI USB Device option, this might be a slightly different name, if it does not work you will need to try all of the options that say USB.</p>
-                <img src="windows_backup/windows_PE_Lazesoft.png" alt="an image representing the Lazesoft Recovery Media, Disk Image & Clone is circled.">
+                <img src="windows_backup/windows_PE_Lazesoft.webp" alt="an image representing the Lazesoft Recovery Media, Disk Image & Clone is circled.">
                 <p>You should now see the Lazesoft Recovery Suite, you now need to click on "Disk Image & Clone", make sure that your portable hard drive is also plugged in.</p>
-                <img src="windows_backup/restore_image_to_drive.png" alt="an image representing the Lazesoft Recovery Media, Restore(Image to Drive) is circled.">
+                <img src="windows_backup/restore_image_to_drive.webp" alt="an image representing the Lazesoft Recovery Media, Restore(Image to Drive) is circled.">
                 <p>You need to click on "Restore(Image to Drive)", this will allow you to restore your PC to the backup you made previously.</p>
-                <img src="windows_backup/select_source_image.png" alt="an image representing the Lazesoft Recovery Media, Select Source Image">
+                <img src="windows_backup/select_source_image.webp" alt="an image representing the Lazesoft Recovery Media, Select Source Image">
                 <p>You need to find your backup to continue, to do this you need to click browse to find your backup image.</p>
-                <img src="windows_backup/select_image_archive.png" alt="an image representing the Lazesoft Recovery Media, select image archive.">
+                <img src="windows_backup/select_image_archive.webp" alt="an image representing the Lazesoft Recovery Media, select image archive.">
                 <p>You need to find your backup image file, to do this you need to click on "My Computer", then click on your external hard drive, then double click on the backup you wish to restore. You can now click "Next >" to continue.</p>
-                <img src="windows_backup/select_volume_to_restore.png" alt="an image representing the Lazesoft Recovery Media, select volumes to restore, all volumes are ticked.">
+                <img src="windows_backup/select_volume_to_restore.webp" alt="an image representing the Lazesoft Recovery Media, select volumes to restore, all volumes are ticked.">
                 <p>If you are asked to select the volumes you wish to restore, you want to make sure that all of the volumes are selected, then click the "Next >" button.</p>
-                <img src="windows_backup/select_restore_target.png" alt="an image representing the Lazesoft Recovery Media, disk 1 is selected.">
+                <img src="windows_backup/select_restore_target.webp" alt="an image representing the Lazesoft Recovery Media, disk 1 is selected.">
                 <p>You will now be asked to select the target disk, <strong>you need to make sure that this is the same disk as the backup you selected, otherwise it will fail or overwrite the wrong disk on your system.</strong> Once you are happy that you have chosen the correct drive, you can click "Start" to start the restoration process.</p>
                 <p><strong>Restoring from the backup will delete and remove any data on your system that was added since the last backup, I advise that you backup any important files before you begin to restore your drive as they will be deleted from your system permanently.</strong></p>
-                <img src="windows_backup/restore_in_progress.png" alt="an image representing the Lazesoft Recovery Media, restore in progress.">
+                <img src="windows_backup/restore_in_progress.webp" alt="an image representing the Lazesoft Recovery Media, restore in progress.">
                 <p>It will take a long time for your computer to restore from the backup, please ensure that you plug your PC in if it is running on battery, once the restore has completed you can click on finish and restart your computer.</p>
                 <p><strong>You should have now successfully restored your PC from your backup file.</strong></p>
         

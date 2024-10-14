@@ -84,14 +84,14 @@ img {
 }
 /* Blur */
 .modal, nav{
-    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 67, 174, 0.8));
+    background: linear-gradient(#000000e6,#0043aecc);
 }
 /* Dark Gradient */
 .modal .close-button, .contact-form input[type="submit"], .welcometext, .featuredarticle, .articlecolumn {
     background: linear-gradient(#333333, #111111);
 }
 /* Light Gradient */
-.sitemap, .articlecolumn a, .articles, .contact-form {
+.sitemap, .articlecolumn a, .articles, .contact-form, aside {
     background: linear-gradient(#f7f7f7, #dbdbdb);
     color: #000000;
 }
@@ -112,6 +112,11 @@ div, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type
     border-radius: 0;
 }
 /* Header */
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 header{
     font-size: 170%;
     text-align: center;
@@ -139,9 +144,10 @@ nav {
     top: 0;
     z-index: 1;
     overflow: auto;
-    width: 75%;
+    width: 80%;
     margin: auto;
     font-size: 0;
+    padding:0 10%;
 }
 .nav a {
     padding: 10px 0;
@@ -162,7 +168,6 @@ nav {
     font-size: 16px;
     box-shadow: none;
 }
-
 .nav a.active {
     background: #006ee4;
     color: #ffffff;
@@ -222,6 +227,7 @@ button:hover {
     }
     nav {
         width: 100%;
+        padding: 0;
     }
 }
 /*Welcome page, display 3 articles and a page welcome*/ 
@@ -254,6 +260,7 @@ button:hover {
     color: #ffffff;
     border: solid 4px #007BFF;
     background: linear-gradient(#007BFF, #006ee4, #0024c4);
+    box-shadow: 0 2px 5px 0 #7a7a7a;
 }
 /*Button hover animation*/
 .articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{
@@ -261,6 +268,7 @@ button:hover {
     background: linear-gradient(#ffffff, #dadada, #d6d6d6);
     border: solid 4px #007BFF;
     text-decoration: underline;
+    box-shadow: 0 4px 10px 0 #007BFF;
 }
 /*Card appearance*/
 .featuredarticle, .articlecolumn{
@@ -337,7 +345,6 @@ aside {
     position: -webkit-sticky; /* Safari 12 and older*/
     position:sticky;
     float: left;
-    background: linear-gradient(#fafafa, #dbdbdb);
     color: #000000;
     overflow-y: auto;
     box-sizing: border-box;
@@ -359,7 +366,7 @@ aside a {
 aside a:hover {
     background: linear-gradient(#007BFF, #006ee4, #0024c4);
     color: #ffffff;
-    background: linear-gradient(#007BFF, #006ee4, #0024c4);
+    box-shadow: 0 4px 10px 0 #007BFF;
 }
 aside h2 {
     margin: 3%;
@@ -508,7 +515,12 @@ th {
         width: 100%;
         font-size: 110%;
         text-shadow: none;
-        overflow: hidden;
+        overflow: none;
+        height: auto;
+        text-align: center;
+    }
+    header p{
+        margin: 2% auto;
     }
     /* Makes welcome text fill screen*/
     .welcometext{
@@ -560,7 +572,7 @@ th {
     }
     /*Light accent to dark*/
     .articles, aside, .sitemap {
-        background:  linear-gradient(#0f0f0f, #272727);
+        background:  linear-gradient(#0f0f0f, #181818, #000c50);
         color: #ffffff;
     }
     th, td {

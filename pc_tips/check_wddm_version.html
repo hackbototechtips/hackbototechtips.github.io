@@ -13,33 +13,34 @@
     <title>Finding WDDM version | Hackboto Tech Tips</title>
 </head>
 <body>
-    <header id="top-of-page"> <!-- Header section -->
-        <p>Hackboto Tech Tips</p>
-    </header>
-    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-        <div class="columnnav">
-            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-            <a class="active" href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
-            <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-            <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-            <a href="../contact.html" title="Visit Contact page">Contact</a>
-        </div>
+    <div class="sticky">
+        <header> <!-- Header section -->
+            <p>Hackboto Tech Tips</p> <!-- Header text -->
+        </header>
+        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+            <div class="columnnav">
+                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+                <a href="../pc_tips.html" class="active" title="Explore tips and tricks for your PC">PC Guides</a>
+                <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+                <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+                <a href="../contact.html" title="Visit Contact page">Contact</a>
+            </div>
             <div class="columnclose">
-            <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-        </div>
-      </nav>
-      <aside title="Jump To Section"> <!-- Aside section for additional content -->
-        <h2>Jump To Section</h2>
+                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
+            </div>
+        </nav>
+    </div>
+      <aside title="Page Navigation"> <!-- Aside section for additional content -->
+        <h2>Page Navigation</h2>
         <hr>
         <ul>
-            <li><a href="#top-of-page" title="Top of Webpage">Top of Webpage</a></li>
-            <li><a href="#Article-Title" title="Top of Article">Top of Article</a></li>
+            <li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
             <li><a href="#Introduction" title="Introduction">Introduction</a></li>
             <li><a href="#using-dxdiag" title="Jump to using dxdiag">Using dxdiag to find WDDM version</a></li>
         </ul>        
     </aside>    
     <article title="Main Article Content"> <!-- Main article content -->
-        <h1 id="Article-Title">Finding your WDDM version</h1>
+        <h1 id="top-of-page">Finding your WDDM version</h1>
             <h2 id="Introduction">Introduction</h2>
                 <p>WDDM stands for Windows Display Driver Model, the latest version of the Windows operating system, Windows 11 requires WDDM 2.0, therefore it is important that you know the display driver model version that your computer is operating under.</p>
                 <p>It is really easy to find your Windows Display Driver Model version, you will need to use a tool called DirectX Diagnostic Tool (dxdiag.exe), this tool is free to use and is built into your computer.</p>

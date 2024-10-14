@@ -13,21 +13,23 @@
     <title>DNS Adblock | Hackboto Tech Tips</title>
 </head>
 <body>
-    <header id="top-of-page"> <!-- Header section -->
-        <p>Hackboto Tech Tips</p>
-    </header>
-    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-        <div class="columnnav">
-            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-            <a href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
-            <a class="active" href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-            <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-            <a href="../contact.html" title="Visit Contact page">Contact</a>
-        </div>
+    <div class="sticky">
+        <header> <!-- Header section -->
+            <p>Hackboto Tech Tips</p> <!-- Header text -->
+        </header>
+        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+            <div class="columnnav">
+                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+                <a href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
+                <a href="../mobile_tips.html" class="active" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+                <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+                <a href="../contact.html" title="Visit Contact page">Contact</a>
+            </div>
             <div class="columnclose">
-            <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-        </div>
-      </nav>
+                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
+            </div>
+        </nav>
+    </div>
       <aside title="Page Navigation">
         <h2>Page Navigation</h2>
         <hr>
@@ -44,7 +46,7 @@
         </ul>        
     </aside>    
     <article title="Main Article Content"> <!-- Main article content -->
-        <h1>Blocking advertisements on your mobile phone</h1>
+        <h1 id="top-of-page">Blocking advertisements on your mobile phone</h1>
             <h2 id="Introduction">Introduction</h2>
                 <p>Ads are everywhere on modern day devices, especially on your mobile phone but did you know that you can easily block ads on your mobile phone and other internet enabled devices such as tablets and smart TVs for free.</p>
                 <p>You can use an alternative DNS server to block ads, this works by preventing your device from connecting to the malicious servers that deliver you annoying ads on your device.</p>

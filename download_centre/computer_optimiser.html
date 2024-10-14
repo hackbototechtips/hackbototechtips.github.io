@@ -13,33 +13,35 @@
     <title>Computer Optimiser | Hackboto Tech Tips</title>
 </head>
 <body>
-    <header id="top-of-page"> <!-- Header section -->
-        <p>Hackboto Tech Tips</p>
-    </header>
-    <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-        <div class="columnnav">
-            <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-            <a href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
-            <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-            <a class="active" href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-            <a href="../contact.html" title="Visit Contact page">Contact</a>
-        </div>
+    <div class="sticky">
+        <header> <!-- Header section -->
+            <p>Hackboto Tech Tips</p> <!-- Header text -->
+        </header>
+        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
+            <div class="columnnav">
+                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
+                <a href="../pc_tips.html" title="Explore tips and tricks for your PC">PC Guides</a>
+                <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+                <a href="../download_centre.html" class="active" title="Find file downloads here.">Download Centre</a>
+                <a href="../contact.html" title="Visit Contact page">Contact</a>
+            </div>
             <div class="columnclose">
-            <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-        </div>
-      </nav>
-      <aside title="Jump To Section"> <!-- Aside section for additional content -->
-        <h2>Jump To Section</h2>
+                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
+            </div>
+        </nav>
+    </div>
+      <aside title="Page Navigation"> <!-- Aside section for additional content -->
+        <h2>Page Navigation</h2>
         <hr>
         <ul>
-            <li><a href="#top-of-page" title="Top of Webpage">Top of Webpage</a></li>
+            <li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
             <li><a href="#function" title="Jump to Function">Functions</a></li>
             <li><a href="#download" title="Jump to download process">Download</a></li>
             <li><a href="#how-to-use" title="Jump to user guide">User Guide</a></li>
         </ul>        
     </aside>    
     <article title="Main Article Content"> <!-- Main article content -->
-        <h1>Download: Computer Optimiser Scripts</h1>
+        <h1 id="top-of-page">Download: Computer Optimiser Scripts</h1>
             <img src="computer_optimiser/system_optimiser.webp" alt="an image representing the System Optimiser Script.">
                 <p class="imgdescription">The Hackboto Tech Tips Computer Optimiser Scripts are really easy to use, just follow the instructions that you are provided with.</p>
             <h2 id="function">What Does the Script Do?</h2>
