@@ -84,9 +84,7 @@ img {
 }
 /* Blur */
 .modal, nav{
-    background: rgba(42, 42, 42, 0.9);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 67, 174, 0.8));
 }
 /* Dark Gradient */
 .modal .close-button, .contact-form input[type="submit"], .welcometext, .featuredarticle, .articlecolumn {
@@ -97,10 +95,13 @@ img {
     background: linear-gradient(#f7f7f7, #dbdbdb);
     color: #000000;
 }
-/* Hover large dropshadow */
+/*Img dropshadow */
 img:not(.enlarged-image):hover {
     box-shadow: 0 8px 20px 0 #007BFF;
     cursor: pointer;
+}
+img:not(.enlarged-image){
+    box-shadow: 0 4px 10px 0 #7a7a7a;
 }
 /* Rounded corners */
 div, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
@@ -362,6 +363,9 @@ aside a:hover {
 }
 aside h2 {
     margin: 3%;
+}
+.Subheading {
+    margin: 3px 3%;
 }
 /*Responsive layout - makes the columns stack on top of each other*/
 @media screen and (max-width: 900px) {
