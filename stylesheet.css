@@ -104,7 +104,7 @@ img:not(.enlarged-image){
     box-shadow: 0 4px 10px 0 #7a7a7a;
 }
 /* Rounded corners */
-div, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
+div, .sitemap a, footer a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
     border-radius: 10px;
 }
 /*Not Rounded*/
@@ -472,10 +472,9 @@ footer p {
     font-weight: bold;
 }
 footer a {
-    margin: auto;
-    width: 40%;
-    padding: 19px 0;
-    border-radius: 0;
+    margin: 1% auto;
+    width: 48%;
+    padding: 10px 0;
     display:inline-block;
 }
 .footertext, .footerbuttons {
@@ -518,7 +517,6 @@ th {
         width: 100%;
         font-size: 110%;
         text-shadow: none;
-        overflow: none;
         height: auto;
         text-align: center;
     }
