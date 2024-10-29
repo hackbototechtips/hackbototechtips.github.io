@@ -185,7 +185,7 @@ nav {
 button:hover {
     cursor: pointer;
 }
-/* Responsive Nav */
+/* Responsive design*/
 @media screen and (max-width: 900px) {
     .nav a:not(:first-child) {
         display: none;
@@ -220,11 +220,10 @@ button:hover {
         float: right;
         width: 25%;
     }
+}
+@media screen and (min-width: 901px) {
     .asidefooter {
         padding-left: 29%;
-    }
-    .contact-form {
-        width: 75%;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -385,7 +384,7 @@ aside hr{
 .Subheading {
     margin: 3px 3%;
 }
-/*Responsive layout - makes the columns stack on top of each other*/
+/*Responsive layout -mobile*/
 @media screen and (max-width: 900px) {
     .articlecolumn {
         width: 100%;
@@ -423,6 +422,7 @@ aside hr{
     padding: 20px;
     padding-bottom: 10px;
     font-weight: bold;
+    width: 75%;
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
@@ -528,7 +528,7 @@ th {
         width: auto;
         margin: 0 1%;
     }
-    /* Makes contact and table fill screen*/
+    /*table fill screen*/
     table{
         width: 98%;
         margin: 0 1%;
