@@ -2,7 +2,7 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0 auto;
-    max-width: 2000px;
+    max-width: 2050px;
     background-color: #ffffff;
 }
 html {
@@ -357,8 +357,6 @@ aside {
 aside li {
     border-left: 6px solid #006ee4;
     margin: 3px 0;
-}
-aside ul {
     list-style-type: none;
 }
 aside a {
@@ -377,14 +375,10 @@ aside h2 {
     margin: 2%;
 
 }
-aside hr{
-    border: none;
-    height: 2px;
-}
 .Subheading {
     margin: 3px 3%;
 }
-/*Responsive layout -mobile*/
+/*Responsive layout small*/
 @media screen and (max-width: 900px) {
     .articlecolumn {
         width: 100%;
@@ -395,11 +389,12 @@ aside hr{
     aside {
         display: none;
     }
+    /* Improves article appearance */
     article {
-        margin: auto;
-    }
-    .articlecolumn img {
-        max-width: 45%;
+        width: auto;
+        margin: 0 auto;
+        padding: 0 2%;
+        max-width: 75ch;
     }
     /* Index page cards fill screen */
     .featuredarticle  {
@@ -462,7 +457,6 @@ footer {
     color: #007BFF;
     bottom: 0;
     left: 0;
-    display: block;
     text-align: center;
     margin-top: 5px;
     font-size: 110%;
@@ -542,10 +536,6 @@ th {
         padding: 1%;
     }
     /* Improves article appearance */
-    article {
-        width: auto;
-        margin: 0 2%;
-    }
     article h1 {
         font-size: 200%;
     }
@@ -612,6 +602,7 @@ pre {
     padding-left: 5%;
 }
 hr {
-    height: 1px;
-    background-color: currentcolor;
+    background-color: #006ee4;
+    border: none;
+    height: 3px;
 }
