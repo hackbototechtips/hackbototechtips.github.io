@@ -185,56 +185,6 @@ nav {
 button:hover {
     cursor: pointer;
 }
-/* Responsive design*/
-@media screen and (max-width: 900px) {
-    .nav a:not(:first-child) {
-        display: none;
-    }
-    .nav a {
-        padding: 16px 0;
-        width: 100%;
-    }
-    .nav.responsive a, .nav.responsive button {
-        display: block;
-        text-align: left;
-        text-indent: 2%;
-    }
-    .nav button.icon {
-        display: block;
-        text-align: center;
-    }
-    nav.responsive {
-        height: 100vh;
-        overflow-y: auto;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 3;
-    }
-    .columnnav {
-        float: left;
-        width: 70%;
-    }
-    .columnclose {
-        float: right;
-        width: 25%;
-    }
-}
-@media screen and (min-width: 901px) {
-    .asidefooter {
-        padding-left: 29%;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .nav a {
-        padding: 16px 0;
-    }
-    nav {
-        width: 100%;
-        padding: 0;
-    }
-}
 /*Welcome page, display 3 articles and a page welcome*/ 
 .welcometext {
     max-width: 85ch;
@@ -378,39 +328,6 @@ aside h2 {
 .Subheading {
     margin: 3px 3%;
 }
-/*Responsive layout small*/
-@media screen and (max-width: 900px) {
-    .articlecolumn {
-        width: 100%;
-        margin: 2%;
-        min-width: 100%;
-    }
-    /*Makes aside hide on articles*/
-    aside {
-        display: none;
-    }
-    /* Improves article appearance */
-    article {
-        width: auto;
-        margin: 0 auto;
-        padding: 0 2%;
-        max-width: 75ch;
-    }
-    /* Index page cards fill screen */
-    .featuredarticle  {
-        width: 98%;
-        min-width: 0;
-    }
-}
-/*Aside hidden on small screens */
-@media screen and (max-height: 260px) {
-    aside {
-        display: none;
-    }
-    article {
-        margin: auto;
-    }
-}
 /* Contact Form */
 .contact-form {
     margin: auto;
@@ -500,6 +417,95 @@ th {
     padding: 8px 16px;
     display:inline-block;
 }
+/* Responsive design*/
+@media screen and (max-width: 900px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a {
+        padding: 16px 0;
+        width: 100%;
+    }
+    .nav.responsive a, .nav.responsive button {
+        display: block;
+        text-align: left;
+        text-indent: 2%;
+    }
+    .nav button.icon {
+        display: block;
+        text-align: center;
+    }
+    nav.responsive {
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    .columnnav {
+        float: left;
+        width: 70%;
+    }
+    .columnclose {
+        float: right;
+        width: 28%;
+    }
+    .articlecolumn {
+        width: 100%;
+        margin: 2%;
+        min-width: 100%;
+    }
+    /*Remove Rounded corners */
+    .welcometext, .contact-form  {
+    border-radius: 0px;
+    max-width: none;
+    width: auto;
+    }
+    .welcometext p {
+        margin: 1% auto;
+    }
+    /*Makes aside hide on articles*/
+    aside {
+        display: none;
+    }
+    /* Improves article appearance */
+    article {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 2%;
+        max-width: 75ch;
+    }
+    /* Index page cards fill screen */
+    .featuredarticle  {
+        width: 98%;
+        min-width: 0;
+    }
+}
+@media screen and (min-width: 901px) {
+    .asidefooter {
+        padding-left: 29%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .nav a {
+        padding: 16px 0;
+    }
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+}
+/*Aside hidden on small screens */
+@media screen and (max-height: 260px) {
+    aside, header {
+        display: none;
+    }
+    article {
+        margin: auto;
+    }
+}
 /* Responsive design Mobile */
 @media screen and (max-width: 600px) {
     /* Less overflow on small screens*/
@@ -516,11 +522,6 @@ th {
     }
     header p{
         margin: 1% auto;
-    }
-    /* Makes welcome text fill screen*/
-    .welcometext{
-        width: auto;
-        margin: 0 1%;
     }
     /*table fill screen*/
     table{

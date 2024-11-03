@@ -1,13 +1,16 @@
 function navHamburger() {
   var x = document.getElementById("Nav");
+  var button = document.querySelector('.nav .icon');
+
   if (x.className === "nav") {
       x.className += " responsive";
+      button.textContent = '☰Close';
   } else {
       x.className = "nav";
+      button.textContent = '☰More';
   }
-  updateAsideHeight(); // Update the aside height whenever the hamburger is clicked
+  updateAsideHeight(); // Update the aside height when clicked
 }
-
 // Fixes the aside bar
 function updateAsideHeight() {
     const header = document.querySelector('header');
