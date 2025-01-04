@@ -22,7 +22,7 @@ p, li, h1, h2, h3, article img {
     margin-right: auto;
 }
 img {
-    border-radius: 15px;
+    border-radius: 25px;
     width: 100%;
     height: 100%;
     max-height: 75vh;
@@ -105,7 +105,7 @@ img:not(.enlarged-image){
 }
 /* Rounded corners */
 div, .sitemap a, footer a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {
-    border-radius: 10px;
+    border-radius: 25px;
 }
 /*Not Rounded*/
 .articles, .nav, .modal {
@@ -343,7 +343,7 @@ aside h2 {
     padding: 1%;
     margin-bottom: 10px;
     border: 2px solid #007BFF;
-    border-radius: 10px;
+    border-radius: 25px;
     font-family: sans-serif;
     background-color: #007BFF;
     color: #ffffff;
@@ -459,9 +459,8 @@ th {
     }
     /*Remove Rounded corners */
     .welcometext, .contact-form  {
-    border-radius: 0px;
-    max-width: none;
-    width: auto;
+        max-width: none;
+        width: 85%;
     }
     .welcometext p {
         margin: 1% auto;
@@ -477,10 +476,21 @@ th {
         padding: 0 2%;
         max-width: 75ch;
     }
-    /* Index page cards fill screen */
+    .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a {
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 110%;
+        padding: 15px;
+    }
     .featuredarticle  {
-        width: 98%;
-        min-width: 0;
+        width: 85%;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 95%;
+        padding: 2%;
+        font-size: 110%;
     }
 }
 @media screen and (min-width: 901px) {
@@ -515,10 +525,10 @@ th {
     /* Makes header text fill screen, stops overflow into nav bar on small screens.*/
     header{
         width: 100%;
-        font-size: 110%;
         text-shadow: none;
         height: auto;
         text-align: center;
+        padding-top: 4%;
     }
     header p{
         margin: 1% auto;
@@ -545,6 +555,29 @@ th {
     }
     article img {
         width: 100%;
+    }
+    .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a {
+        padding: 5%;
+    }
+    /* Index page cards fill screen */
+    .featuredarticle  {
+        width: 98%;
+        min-width: 0;
+    }
+    .welcometext, .contact-form  {
+        border-radius: 25px 25px 0 0;
+        width: auto;
+    }
+    .contact-form input[type="submit"]{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 450px) {
+    p {
+        font-size: 110%;
+    }
+    header{ 
+        font-size: 120%;
     }
 }
 .linkwhite {
