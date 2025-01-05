@@ -50,8 +50,8 @@ img {
     top: 0;
     left: 0;
     margin: 5px;
-    font-size: 200%;
-    border-radius: 10px;
+    font-size: 175%;
+    border-radius: 25px;
     padding: 1rem 2rem;
     width:fit-content;
     text-align: center;
@@ -84,7 +84,7 @@ img {
 }
 /* Blur */
 .modal, nav{
-    background: linear-gradient(#000000e6,#0043aecc);
+    background: linear-gradient(#0043ae, #000000e6);
 }
 /* Dark Gradient */
 .modal .close-button, .contact-form input[type="submit"], .welcometext, .featuredarticle, .articlecolumn {
@@ -263,6 +263,10 @@ button:hover {
     padding: 6px 6px;
     display:inline-block;
 }
+.featuredarticle h3, .articlecolumn h3 {
+    font-size: 120%;
+    margin: 3%;
+}
 .articlecolumn p {
     padding: 0 5px;
 }
@@ -394,11 +398,14 @@ footer a {
 }
 /* Table */
 table {
-    width: 75%;
+    width: fit-content;
+    max-width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin: auto;
     border: 2px solid #000000;
+    overflow: scroll;
+    display: block;
 }
 th, td {
     padding: 12px;
@@ -411,11 +418,16 @@ th {
 /* Sitemap */
 .sitemap {
     padding: 2%;
+    text-align: center;
 }
 .sitemap a {
-    max-width: 50%;
-    padding: 8px 16px;
-    display:inline-block;
+    padding: 10px;
+    display: block;
+}
+.sitemap ul {
+    list-style: none;
+    padding: 0;
+    font-size: 90%;
 }
 /* Responsive design*/
 @media screen and (max-width: 900px) {
@@ -435,12 +447,25 @@ th {
         display: block;
         text-align: center;
     }
-    nav.responsive {
-        height: 100vh;
-        overflow-y: auto;
+    header.responsive {
         position: fixed;
         width: 100%;
+        height: 20vh;
+        font-size: 120%;
         top: 0;
+        left: 0;
+        z-index: 2;
+        background:linear-gradient(#000000, #0043ae);
+    }
+    header p {
+        transition: 0.2s;
+    }
+    nav.responsive {
+        position: fixed;
+        top: 20vh; 
+        width: 100%;
+        height: calc(100vh - 20vh);
+        overflow-y: auto;
         left: 0;
         z-index: 3;
     }
@@ -452,12 +477,9 @@ th {
         float: right;
         width: 28%;
     }
-    .articlecolumn {
-        width: 100%;
-        margin: 2%;
-        min-width: 100%;
+    .featuredarticle, .articlecolumn {
+        width: 85%;
     }
-    /*Remove Rounded corners */
     .welcometext, .contact-form  {
         max-width: none;
         width: 85%;
@@ -476,14 +498,10 @@ th {
         padding: 0 2%;
         max-width: 75ch;
     }
-    .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a {
-        border-radius: 25px;
+    .linkbutton, .contact-form input[type="submit"], .articlecolumn a {
         font-weight: bold;
         font-size: 110%;
-        padding: 15px;
-    }
-    .featuredarticle  {
-        width: 85%;
+        padding: 10px;
     }
     .contact-form input[type="text"],
     .contact-form input[type="email"],
@@ -508,12 +526,16 @@ th {
     }
 }
 /*Aside hidden on small screens */
-@media screen and (max-height: 260px) {
+@media screen and (max-height: 350px) {
     aside, header {
         display: none;
     }
     article {
         margin: auto;
+    }
+    nav.responsive {
+        top: 0;
+        height: 100vh;
     }
 }
 /* Responsive design Mobile */
@@ -522,7 +544,7 @@ th {
     body {
         word-wrap: break-word;
     }
-    /* Makes header text fill screen, stops overflow into nav bar on small screens.*/
+    /* Makes header text fill screen*/
     header{
         width: 100%;
         text-shadow: none;
@@ -533,31 +555,21 @@ th {
     header p{
         margin: 1% auto;
     }
-    /*table fill screen*/
-    table{
-        width: 98%;
-        margin: 0 1%;
-    }
     .about{
         display: none;
-    }
-    /* Makes Footer smaller*/
-    footer  {
-        font-size: 90%;
-        padding: 1%;
     }
     /* Improves article appearance */
     article h1 {
         font-size: 200%;
     }
-    li h3 {
+    article li h3 {
         text-align: left;
     }
     article img {
         width: 100%;
     }
-    .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a {
-        padding: 5%;
+    .sitemap a, .linkbutton, .contact-form input[type="submit"], .articlecolumn a {
+        padding: 3%;
     }
     /* Index page cards fill screen */
     .featuredarticle  {
@@ -567,6 +579,8 @@ th {
     .welcometext, .contact-form  {
         border-radius: 25px 25px 0 0;
         width: auto;
+        margin: 0;
+        padding: 0;
     }
     .contact-form input[type="submit"]{
         width: 85%;
@@ -574,10 +588,19 @@ th {
 }
 @media screen and (max-width: 450px) {
     p {
-        font-size: 110%;
+        font-size: 105%;
     }
     header{ 
         font-size: 120%;
+        overflow: hidden;
+    }
+    .featuredarticle, .articlecolumn {
+        margin: 2%;
+        min-width: 98%;
+    }
+    /* Makes Footer smaller*/
+    .footertext, .footerbuttons {
+        width: 100%;
     }
 }
 .linkwhite {
@@ -629,11 +652,9 @@ pre {
     background-color: #f1f1f1;
     color: #000000;
     display: block;
-    width: fit-content;
+    width: 100%;
     margin: auto;
-}
-.l2 {
-    padding-left: 5%;
+    overflow: scroll;
 }
 hr {
     background-color: #006ee4;

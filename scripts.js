@@ -1,14 +1,19 @@
 function navHamburger() {
   var x = document.getElementById("Nav");
+  var header = document.querySelector('header');  // Select the header element
   var button = document.querySelector('.nav .icon');
 
+  // Toggle the "responsive" class on both the nav and the header
   if (x.className === "nav") {
       x.className += " responsive";
+      header.classList.add('responsive');  // Add 'responsive' class to header
       button.textContent = '☰Close';
   } else {
       x.className = "nav";
+      header.classList.remove('responsive');  // Remove 'responsive' class from header
       button.textContent = '☰More';
   }
+
   updateAsideHeight(); // Update the aside height when clicked
 }
 // Fixes the aside bar

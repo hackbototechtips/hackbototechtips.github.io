@@ -3,140 +3,140 @@
 	<!-- Index Page -->
     <url>
         <loc>https://hackbototechtips.github.io/index.html</loc>
-        <lastmod>2024-07-25</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>1.0</priority>
     </url>
 	<!-- PC Tech Tips -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips.html</loc>
-        <lastmod>2024-06-26</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Debloating Windows 11 -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/windows_debloat.html</loc>
-        <lastmod>2024-05-27</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
         <!-- Optimising Windows 10/ 11 -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/windows_optimise.html</loc>
-        <lastmod>2024-10-11</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Fixing hardware acceleration black screen -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/hardware_acceleration_black_screen_fix.html</loc>
-        <lastmod>2024-05-29</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Upgrading to Windows 11 -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/upgrading_to_windows11.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
         <!-- Backing Up Windows 10/ 11 -->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/windows_backup.html</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!--Blocking ads on your PC-->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/adblocker.html</loc>
-        <lastmod>2024-06-16</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!--Finding your WDDM version-->
     <url>
         <loc>https://hackbototechtips.github.io/pc_tips/check_wddm_version.html</loc>
-        <lastmod>2024-06-28</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
         <!-- Mobile guides -->
     <url>
         <loc>https://hackbototechtips.github.io/mobile_tips.html</loc>
-        <lastmod>2024-06-26</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
         <!--Blocking ads using DNS-->
     <url>
         <loc>https://hackbototechtips.github.io/mobile_tips/dns_adblocker.html</loc>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Download Centre -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre.html</loc>
-        <lastmod>2024-09-22</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Download Settings optimiser -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/settings_optimiser.html</loc>
-        <lastmod>2024-10-28</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
         <!-- Download Windows 11 requirement bypass -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/win11_requirement_bypass_tool.html</loc>
-        <lastmod>2024-09-22</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Download MPO fix -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/multi-pane_overlay_disable_reg.html</loc>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Download PopCnt Checker -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/popcnt_checker.html</loc>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Download Computer Optimiser -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/computer_optimiser.html</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Contact -->
     <url>
         <loc>https://hackbototechtips.github.io/contact.html</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
 	<!-- Sitemap -->
     <url>
         <loc>https://hackbototechtips.github.io/map.html</loc>
-        <lastmod>2024-06-26</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Legal -->
     <url>
         <loc>https://hackbototechtips.github.io/legal.html</loc>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-01-05</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
