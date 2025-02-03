@@ -124,6 +124,7 @@ header{
     font-family: 'Anton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     letter-spacing: 2px;
+    src: local('Anton'),url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
     text-shadow: 0px 20px 40px #000000;
     background:linear-gradient(#000000, #0043ae);
     height: 80px;
