@@ -80,7 +80,7 @@
     <!-- Download Centre -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre.html</loc>
-        <lastmod>2025-01-05</lastmod>
+        <lastmod>2025-02-28</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
@@ -115,7 +115,14 @@
     <!-- Download Computer Optimiser -->
     <url>
         <loc>https://hackbototechtips.github.io/download_centre/computer_optimiser.html</loc>
-        <lastmod>2025-01-05</lastmod>
+        <lastmod>2025-02-28</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Download Windows Optimiser -->
+    <url>
+        <loc>https://hackbototechtips.github.io/download_centre/windows_optimiser.html</loc>
+        <lastmod>2025-02-28</lastmod>
         <changefreq>never</changefreq>
         <priority>0.8</priority>
     </url>
@@ -129,7 +136,7 @@
 	<!-- Sitemap -->
     <url>
         <loc>https://hackbototechtips.github.io/map.html</loc>
-        <lastmod>2025-01-05</lastmod>
+        <lastmod>2025-02-28</lastmod>
         <changefreq>never</changefreq>
         <priority>0.9</priority>
     </url>
