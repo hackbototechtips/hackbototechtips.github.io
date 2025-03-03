@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn how to fix black squares and black flashing screens in Google Chrome, Zoom, Microsoft Office, etc.">
-    <meta name="keywords" content="Google Chrome, black squares, black screen, hardware acceleration, Multi-Plane Overlay, fix">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="../stylesheet.css"> <!-- Link to external stylesheet -->
-    <link rel="icon" type="image/x-icon" href="../favicon.png">
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-    <script src="../scripts.js"></script> <!-- Link to external JavaScript file -->
-    <title>Black Screen HW Acceleration Fix | Hackboto Tech Tips</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Learn how to fix black squares and black flashing screens in Google Chrome, Zoom, Microsoft Office, etc.">
+	<meta name="keywords" content="Google Chrome, black squares, black screen, hardware acceleration, Multi-Plane Overlay, fix">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../stylesheet.css"> <!--Stylesheet-->
+	<link rel="icon" type="image/x-icon" href="../favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+	<script src="../scripts.js"></script> <!--JavaScript-->
+	<title>Black Screen HW Acceleration Fix | Hackboto Tech Tips</title>
 </head>
 <body>
-    <div class="sticky">
-        <header> <!-- Header section -->
-            <p>Hackboto Tech Tips</p> <!-- Header text -->
-        </header>
-        <nav class="nav" id="Nav" title="Main Navigation"> <!-- Navigation section -->
-            <div class="columnnav">
-                <a href="../index.html" title="Go to Home">Home</a> <!-- Navigation links -->
-                <a href="../pc_tips.html" class="active" title="Explore tips and tricks for your PC">PC Guides</a>
-                <a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
-                <a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
-                <a href="../contact.html" title="Visit Contact page">Contact</a>
-            </div>
-            <div class="columnclose">
-                <div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div> <!-- Navigation hamburger icon -->
-            </div>
-        </nav>
-    </div>
-      <aside title="Page Navigation"> <!-- Aside section for additional content -->
-        <h2>Page Navigation</h2>
-        <hr>
-        <ul>
-            <li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
-            <li><a href="#Introduction" title="Introduction">Introduction</a></li>
-            <li class="Subheading"><a href="#hardware-acceleration" title="Hardware Acceleration">Hardware Acceleration</a></li>
-            <li class="Subheading"><a href="#multi-plane-overlay" title="Multi-Plane Overlay">Multi-Plane Overlay</a></li>
-            <li class="Subheading"><a href="#registry-fix" title="Registry Fix">Registry Fix</a></li>
-        </ul>        
-    </aside>    
-    <article title="Main Article Content"> <!-- Main article content -->
-        <h1 id="top-of-page">Fixing Black Squares and Flashing Black Screens in Applications That Use Hardware Acceleration</h1>
-            <img src="hardware_acceleration_black_screen_fix/black_artefacts_mockup.webp" alt="an image representing black artefacts in Microsoft Office.">
-                <p class="imgdescription">The glitch causes applications that use Hardware Acceleration to have black artefacts, this image is a mock-up as the artifacts do not appear long enough to capture an example.</p>
-            <h2 id="Introduction">Introduction</h2>
-                <p>Have you run into problems on Windows 10/ 11 where your screen randomly starts flashing black, you see black squares in videos and when you are browsing the internet, you see black squares in Microsoft Office?</p>
-                <p>These artefacts only appear for a few seconds at a time and can make you feel like you are going crazy because they are so random and unpredictable, you are not alone if you are experiencing these issues as it is really common on Windows 10/ 11 PCs.</p>
-            <h3 id="hardware-acceleration">Why you shouldn't disable Hardware Acceleration.</h3> 
-            <p>The black screen problem and checkerboard squares are often associated with Hardware Acceleration as these problems are easily fixed by disabling Hardware Acceleration in your application settings.</p>
-            <p>The problem with disabling Hardware Acceleration is that it can drastically worsen the performance of your computer, especially with regards to graphics-based performance such as video calling, watching videos, etc, therefore I do not consider this to be an actual fix to the problem as it is simply replacing one problem with another.</p>
-            <h3 id="multi-plane-overlay">Multi-Plane Overlay Fix</h3>
-            <p>In Windows 8.1 a feature was introduced called Multi-Plane Overlay (MPO). This feature aims to improve performance by allowing multiple planes to be overlaid, but it can lead to rendering issues in certain situations.</p>
-            <p>The hardware manufacturer NVIDIA has stated that disabling Multi-Plane Overlay can fix some graphics related issues, I have tested this myself on different computer systems with similar black artifacts and it solved the problems, including a black screen problem on a Lenovo IdeaPad 110-15IBR laptop that rendered it unusable on Windows 11.</p>
-            <a class="linkbutton" title="Visit NVIDIA Support" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5157/~/after-updating-to-nvidia-game-ready-driver-461.09-or-newer%2C-some-desktop-apps">View NVIDIA statement on MPO.</a>
-            <h3 id="registry-fix">Registry Fix</h3>
-            <p>Based on the advice provided by NVIDIA Support, it is possible to disable Multi-Plane Overlay, through a registry tweak.</p>
-            <p>To apply the registry fix, you can download the MPO_Fix.zip file from the webpage linked below, or you can apply the registry tweak manually.</p>
-            <a class="linkbutton" href="https://hackbototechtips.github.io/download_centre/multi-pane_overlay_disable_reg.html" title="Visit MPO Fix download page">Download Page: Multi-Plane Overlay Fix</a>
-            <p>To disable Multi-Plane Overlay manually you can apply the following registry tweak:</p>
-                <pre>
+	<div class="sticky">
+		<header>
+			<p>Hackboto Tech Tips</p>
+		</header>
+		<nav class="nav" id="Nav" title="Main Navigation"> <!--Nav-->
+			<div class="columnnav">
+				<a href="../index.html" title="Go to Home">Home</a>
+				<a href="../pc_tips.html" class="active" title="Explore tips and tricks for your PC">PC Guides</a>
+				<a href="../mobile_tips.html" title="Explore tips and tricks for you mobile">Mobile Guides</a>
+				<a href="../download_centre.html" title="Find file downloads here.">Download Centre</a>
+				<a href="../contact.html" title="Visit Contact page">Contact</a>
+			</div>
+			<div class="columnclose">
+				<div class="nav"><button href="javascript:void(0);" class="icon" onclick="navHamburger()" title="Toggle Navigation">☰More</button></div>
+			</div>
+		</nav>
+	</div>
+	<aside title="Page Navigation">
+		<h2>Page Navigation</h2>
+		<hr>
+		<ul>
+			<li><a href="#top-of-page" title="Go To The Top Of Webpage">Go To Top</a></li>
+			<li><a href="#Introduction" title="Introduction">Introduction</a></li>
+			<li class="Subheading"><a href="#hardware-acceleration" title="Hardware Acceleration">Hardware Acceleration</a></li>
+			<li class="Subheading"><a href="#multi-plane-overlay" title="Multi-Plane Overlay">Multi-Plane Overlay</a></li>
+			<li class="Subheading"><a href="#registry-fix" title="Registry Fix">Registry Fix</a></li>
+		</ul>        
+	</aside>    
+	<article title="Main Article Content">
+		<h1 id="top-of-page">Fixing Black Squares and Flashing Black Screens in Applications That Use Hardware Acceleration</h1>
+			<img src="hardware_acceleration_black_screen_fix/black_artefacts_mockup.webp" alt="an image representing black artefacts in Microsoft Office.">
+				<p class="imgdescription">The glitch causes applications that use Hardware Acceleration to have black artefacts, this image is a mock-up as the artifacts do not appear long enough to capture an example.</p>
+			<h2 id="Introduction">Introduction</h2>
+				<p>Have you run into problems on Windows 10/ 11 where your screen randomly starts flashing black, you see black squares in videos and when you are browsing the internet, you see black squares in Microsoft Office?</p>
+				<p>These artefacts only appear for a few seconds at a time and can make you feel like you are going crazy because they are so random and unpredictable, you are not alone if you are experiencing these issues as it is really common on Windows 10/ 11 PCs.</p>
+				<h3 id="hardware-acceleration">Why you shouldn't disable Hardware Acceleration.</h3> 
+					<p>The black screen problem and checkerboard squares are often associated with Hardware Acceleration as these problems are easily fixed by disabling Hardware Acceleration in your application settings.</p>
+					<p>The problem with disabling Hardware Acceleration is that it can drastically worsen the performance of your computer, especially with regards to graphics-based performance such as video calling, watching videos, etc, therefore I do not consider this to be an actual fix to the problem as it is simply replacing one problem with another.</p>
+				<h3 id="multi-plane-overlay">Multi-Plane Overlay Fix</h3>
+					<p>In Windows 8.1 a feature was introduced called Multi-Plane Overlay (MPO). This feature aims to improve performance by allowing multiple planes to be overlaid, but it can lead to rendering issues in certain situations.</p>
+					<p>The hardware manufacturer NVIDIA has stated that disabling Multi-Plane Overlay can fix some graphics related issues, I have tested this myself on different computer systems with similar black artifacts and it solved the problems, including a black screen problem on a Lenovo IdeaPad 110-15IBR laptop that rendered it unusable on Windows 11.</p>
+					<a class="linkbutton" title="Visit NVIDIA Support" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5157/~/after-updating-to-nvidia-game-ready-driver-461.09-or-newer%2C-some-desktop-apps">View NVIDIA statement on MPO.</a>
+				<h3 id="registry-fix">Registry Fix</h3>
+					<p>Based on the advice provided by NVIDIA Support, it is possible to disable Multi-Plane Overlay, through a registry tweak.</p>
+					<p>To apply the registry fix, you can download the MPO_Fix.zip file from the webpage linked below, or you can apply the registry tweak manually.</p>
+					<a class="linkbutton" href="https://hackbototechtips.github.io/download_centre/multi-pane_overlay_disable_reg.html" title="Visit MPO Fix download page">Download Page: Multi-Plane Overlay Fix</a>
+					<p>To disable Multi-Plane Overlay manually you can apply the following registry tweak:</p>
+				<pre>
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "OverlayTestMode"=dword:00000005</pre>
-            <p>To enable Multi-Plane Overlay manually you can apply the following tweak/ delete the 'OverlayTestMode' DWORD :</p>
-                    <pre>
+					<p>To enable Multi-Plane Overlay manually you can apply the following tweak/ delete the 'OverlayTestMode' DWORD :</p>
+				<pre>
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "OverlayTestMode"=-</pre>
-            <p><strong>After applying the tweak via the premade files or manually you, you will need to restart your computer to apply the changes.</strong></p>
-        <hr>
-        <p>Page Updated: 29/05/2024</p>
-        <p>Page Author: Hackboto</p>
-    </article>
-    <footer class="asidefooter" title="Website Footer"> <!-- Footer section -->
-        <div class="footertext">
-            <p>©2025 Hackboto Tech Tips All Rights Reserved</p> <!-- Copyright notice -->
-        </div>
-        <div class="footerbuttons">
-            <a href="../map.html" title="Go to Sitemap">Sitemap</a> <!-- Link to sitemap -->
-            <a href="../legal.html" title="Go to Legal">Legal</a> <!-- Link to Legal Page -->
-        </div>
-    </footer> 
+					<p><strong>After applying the tweak via the premade files or manually you, you will need to restart your computer to apply the changes.</strong></p>
+		<hr>
+		<p>Page Updated: 29/05/2024</p>
+		<p>Page Author: Hackboto</p>
+	</article>
+	<footer class="asidefooter" title="Website Footer"> <!--Footer-->
+		<div class="footertext">
+			<p>©2025 Hackboto Tech Tips All Rights Reserved</p>
+		</div>
+		<div class="footerbuttons">
+			<a href="../map.html" title="Go to Sitemap">Sitemap</a>
+			<a href="../legal.html" title="Go to Legal">Legal</a>
+		</div>
+	</footer> 
 </body>
 </html>
