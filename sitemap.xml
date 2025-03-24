@@ -10,35 +10,28 @@
 	<!-- PC Tech Tips -->
 	<url>
 		<loc>https://hackbototechtips.github.io/pc_tips.html</loc>
-		<lastmod>2025-01-05</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.9</priority>
-	</url>
-	<!-- Debloating Windows 11 -->
-	<url>
-		<loc>https://hackbototechtips.github.io/pc_tips/windows_debloat.html</loc>
-		<lastmod>2025-01-05</lastmod>
-		<changefreq>never</changefreq>
-		<priority>0.8</priority>
 	</url>
 	<!-- Optimising Windows 10/ 11 -->
 	<url>
 		<loc>https://hackbototechtips.github.io/pc_tips/windows_optimise.html</loc>
-		<lastmod>2025-03-02</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
-	<!-- Fixing hardware acceleration black screen -->
+	<!-- Fixing hardware acceleration issues -->
 	<url>
 		<loc>https://hackbototechtips.github.io/pc_tips/hardware_acceleration_black_screen_fix.html</loc>
-		<lastmod>2025-01-05</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<!-- Upgrading to Windows 11 -->
 	<url>
 		<loc>https://hackbototechtips.github.io/pc_tips/upgrading_to_windows11.html</loc>
-		<lastmod>2025-01-05</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
@@ -87,7 +80,7 @@
 	<!-- Download Settings optimiser -->
 	<url>
 		<loc>https://hackbototechtips.github.io/download_centre/settings_optimiser.html</loc>
-		<lastmod>2025-03-11</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
@@ -101,7 +94,7 @@
 	<!-- Download MPO fix -->
 	<url>
 		<loc>https://hackbototechtips.github.io/download_centre/multi-pane_overlay_disable_reg.html</loc>
-		<lastmod>2025-01-05</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.8</priority>
 	</url>
@@ -136,7 +129,7 @@
 	<!-- Sitemap -->
 	<url>
 		<loc>https://hackbototechtips.github.io/map.html</loc>
-		<lastmod>2025-02-28</lastmod>
+		<lastmod>2025-03-24</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.9</priority>
 	</url>
