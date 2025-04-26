@@ -40,18 +40,19 @@ img {border-radius: 25px;
 /*Blur*/
 .modal, nav{background: linear-gradient(#0043ae, #000000e6)}
 /*Dark*/
-.modal .close-button, .contact-form input[type="submit"], .welcometext, .featuredarticle, .articlecolumn {background: linear-gradient(#333333, #111111);}
+.modal .close-button, .contact-form input[type="submit"], .featuredarticle, .articlecolumn {background: linear-gradient(#333333, #111111);}
 /*Light*/
-.articlecolumn a, .contact-form, .welcometext {background: linear-gradient(#f7f7f7, #dbdbdb); color: #000000;border: solid #444444;}
+.articlecolumn a, .contact-form {background: linear-gradient(#f7f7f7, #dbdbdb); color: #000000;border: solid #444444;}
+.welcometext {background:linear-gradient(#000000, #002f79, #01368a); color: #ffffff; padding: 10px 0 5px 0; border-bottom: solid 3px #006ee4;}
 /*Blue*/
-.articles, aside, .sitemap {background:linear-gradient(#000000, #000000, #01368a);}
+.articles, aside, .sitemap {background:linear-gradient(#000000, #002f79, #0043ae, #01368a);}
 /*Img shadow*/
 img:not(.enlarged-image):hover {box-shadow: 0 8px 30px 4px #007BFF; cursor: pointer;}
 img:not(.enlarged-image){box-shadow: 0 4px 10px 0 #006ee4;}
 /*Rounded corners*/
 div, .sitemap a, footer a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {border-radius: 25px;}
 /*Not Rounded*/
-.articles, .nav, .modal {border-radius: 0;}
+.articles, .nav, .modal, .welcometext {border-radius: 0;}
 /*Header*/
 .sticky {position: sticky; top: 0; z-index: 1;}
 header{font-size: 160%;
@@ -99,13 +100,10 @@ nav {position: sticky;
 .nav .icon {display: none;}
 button:hover {cursor: pointer;}
 /*Welcome page*/ 
-.welcometext {max-width: 85ch;
-	padding: 1%;
-	margin: auto;
-	text-align: center;
-	margin: auto;}
-.welcometext p, .welcometext h1 {margin: 2%;}
+.welcometext {width: 100%; text-align: center;}
+.welcometext p, .welcometext h1 {max-width: 85ch; margin: 1% auto;}
 .welcometext h1 {font-size: 200%;}
+.welcometext p {font-size: 110%;}
 .featuredarticle {max-width: 85ch;
 	float: left;
 	width: 30%;
@@ -249,7 +247,7 @@ th {background-color: #ffffff; color: #000000;}
 	.columnnav {float: left; width: 70%;}
 	.columnclose {float: right; width: 28%;}
 	.featuredarticle, .articlecolumn {width: 85%;}
-	.welcometext, .contact-form {max-width: none; width: 85%;}
+	.contact-form {max-width: none; width: 85%;}
 	.welcometext p {margin: 1% auto;}
 	/*Makes aside hide on articles*/
 	aside {display: none;}
@@ -301,7 +299,7 @@ th {background-color: #ffffff; color: #000000;}
 	.linkblack {color: #ffffff;}
 	.nav a, .nav button, footer a {color: #ffffff; background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);}
 	.articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{color: #ffffff; background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);}
-	.welcometext, .contact-form {background: linear-gradient(#333333, #111111); color: #ffffff;}}
+	.contact-form {background: linear-gradient(#333333, #111111); color: #ffffff;}}
 pre {background-color: #f1f1f1;
 	color: #000000;
 	display: block;
