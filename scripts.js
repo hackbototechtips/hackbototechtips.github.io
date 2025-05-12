@@ -2,7 +2,6 @@ function navHamburger() {
 	var x = document.getElementById("Nav");
 	var header = document.querySelector('header');
 	var button = document.querySelector('.nav .icon');
-	// Toggle the "responsive" class on nav and header
 	if (x.className === "nav") {
 		x.className += " responsive";
 		header.classList.add('responsive');
@@ -12,9 +11,9 @@ function navHamburger() {
 		header.classList.remove('responsive');
 		button.textContent = '☰More';
 	}
-	updateAsideHeight(); // Aside height fix
+	updateAsideHeight(); //Aside fix
 }
-// Fix aside bar
+//Fix aside
 function updateAsideHeight() {
 	const header = document.querySelector('header');
 	const nav = document.querySelector('nav');
@@ -32,40 +31,40 @@ function updateAsideHeight() {
 	window.addEventListener('resize', updateAsideHeight);
 	window.addEventListener('load', updateAsideHeight);
 document.addEventListener('DOMContentLoaded', function() {
-	// Target <img> elements on the page
+	//Target <img> elements
 	const images = document.getElementsByTagName('img');
-	// Click event listener for <img> elements
+	//Event listener for <img> elements
 	Array.from(images).forEach(function(image) {
 		image.addEventListener('click', function() {
 			enlargeImage(image);
 		});
 	});
-	// Enlage img
+	//Enlage img
 	function enlargeImage(imageElement) {
-		const enlargedSrc = imageElement.src; // Fetch source of image
-		// Add a modal for img
+		const enlargedSrc = imageElement.src; //Fetch img source
+		//Add modal for img
 		const modal = document.createElement('div');
-		modal.classList.add('modal'); // Add 'modal' class from CSS
+		modal.classList.add('modal'); //Add 'modal' class
 		const enlargedImage = document.createElement('img');
 		enlargedImage.src = enlargedSrc;
-		enlargedImage.classList.add('enlarged-image'); // Add 'enlarged-image' class
-		// Add close button
+		enlargedImage.classList.add('enlarged-image'); //Add 'enlarged-image' class
+		//Add close button
 		const closeButton = document.createElement('button');
 		closeButton.textContent = 'X';
 		closeButton.classList.add('close-button');
 		closeButton.addEventListener('click', function() {
-			// Remove modal from DOM
+			//Remove modal from DOM
 			setTimeout(function() {
 				modal.remove();
-				// Show original image
+				//Show original image
 				imageElement.style.opacity = '1';
 			});
 		});
 		modal.appendChild(enlargedImage);
-		modal.appendChild(closeButton); // Append the close button to the modal
-		// Append the modal to the body
+		modal.appendChild(closeButton); //Close button
+		//Append the modal to the body
 		document.body.appendChild(modal);
-		// Hide original image
+		//Hide original img
 		imageElement.style.opacity = '0';
 	}
 });
