@@ -2,7 +2,7 @@
 body{font-family:Arial, sans-serif; 
 	margin:0 auto;
 	max-width:2050px;}
-html{scroll-behavior:smooth; background-color:#000000; color:#ffffff;}
+html{scroll-behavior:smooth; background-color:#00245f; color:#ffffff;}
 /*Style*/ 
 p, li{max-width:85ch;}
 h1, h2, h3{max-width:75ch;}
@@ -32,19 +32,17 @@ img{border-radius:25px;
 	padding:1rem 2rem;
 	width:fit-content;}
 /*Blur*/
-.modal, nav{background:linear-gradient(#0043ae, #000000e6);}
-/*Dark*/
-.modal .close-button, .contact-form input[type="submit"], .featuredarticle, .articlecolumn {background: linear-gradient(#f7f7f7, #dbdbdb);}
-/*Light*/
-.articlecolumn a, .contact-form{background:linear-gradient(#f7f7f7,#dbdbdb); color:#000000; border:solid #444444;}
-.welcometext{background:linear-gradient(#000000,#002f79,#01368a); color:#ffffff; padding:10px 0 5px 0; border-bottom:solid 3px #006ee4;}
+nav, footer{backdrop-filter: blur(15px); background-color: rgba(255, 255, 255, 0.3); border-top: 2px solid rgba(255, 255, 255, 0.3); border-bottom:2px solid rgba(255, 255, 255, 0.3)}
+header,.modal{backdrop-filter: blur(15px); background-color: rgba(0, 0, 0, 0.5);}
+/*Welcome*/
+.welcometext{background:linear-gradient(#00245f,#000000); color:#ffffff; padding:10px 0 5px 0; border-bottom:solid 3px #006ee4;}
 /*Blue*/
-.articles, aside, .sitemap{background:linear-gradient(#000000,#002f79,#0043ae,#01368a);}
+.articles, aside, .sitemap{background:linear-gradient(#000000,#002f79,#0043ae,#00245f);}
 /*Img shadow*/
 img:not(.enlarged-image):hover{box-shadow:0 8px 30px 4px #007BFF; cursor:pointer;}
 img:not(.enlarged-image){box-shadow:0 4px 10px 0 #006ee4;}
 /*Rounded corners*/
-div, .sitemap a, footer a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {border-radius:25px;}
+div, .sitemap a, .linkbutton, button, .articlecolumn a, .contact-form input[type="submit"] {border-radius:30px; text-decoration:none;}
 /*Squared*/
 .articles, .nav, .modal, .welcometext{border-radius:0;}
 /*Header*/
@@ -57,7 +55,6 @@ header{font-size:160%;
 	letter-spacing:2px;
 	src: local('Anton'),url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
 	text-shadow:0px 20px 40px #000000;
-	background:linear-gradient(#000000,#0043ae);
 	height:80px;
 	display:flex;}
 /*Match h1*/
@@ -80,9 +77,9 @@ nav{position:sticky;
 	text-align:center;
 	display:inline-block;
 	width:20%;}
-.nav a, .nav button, footer a{color:#000000; background:linear-gradient(#ffffff,#dadada,#d6d6d6); font-size:16px;}
+.nav a, .nav button, footer a{color:#000000; background: rgba(255, 255, 255, 0.7); font-size:16px;}
 .nav a:hover, .nav button:hover, footer a:hover{color:#ffffff;
-	background:linear-gradient(#007BFF,#006ee4,#0024c4);
+	background: rgba(0, 110, 228, 0.8);
 	text-decoration:underline;
 	font-size:16px;
 	box-shadow:none;}
@@ -105,15 +102,20 @@ button:hover{cursor:pointer;}
 	padding: 5px;
 	margin: 5px;}
 /*Blue buttons*/
- .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a{color: #ffffff;border: solid 4px #007BFF; background: linear-gradient(#007BFF, #006ee4, #0024c4);}
+ .sitemap a, .linkbutton, .contact-form input[type="submit"], .modal .close-button, .articlecolumn a{color: #ffffff;border: 3px solid rgba(255, 255, 255, 0.7); background: rgba(0, 110, 228, 0.8);}
 /*Button hover*/
 .articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{color: #000000;
-	background: linear-gradient(#ffffff, #dadada, #d6d6d6);
-	border: solid 4px #007BFF;
+	background: rgba(255, 255, 255, 0.8);
+	border: 3px solid rgba(0, 110, 228, 0.8);
 	text-decoration: underline;
 	box-shadow: 0 4px 10px 0 #007BFF;}
 /*Card appearance*/
-.featuredarticle, .articlecolumn{border: solid #007BFF; box-sizing: border-box; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);}
+.featuredarticle, .articlecolumn, .contact-form{box-sizing: border-box; 
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4);
+	background: rgba(255, 255, 255, 0.7); 
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	color: #000000}
+.articles hr {background: rgba(255, 255, 255, 0.8); border: none; height: 1px;}
 /*Article showcase pages*/
 .articles {overflow: hidden;
 	padding: 1%;
@@ -122,8 +124,7 @@ button:hover{cursor:pointer;}
 .articlerow {display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	color: #000000;}
+	justify-content: center;}
 .articles h2 {text-decoration: underline;}
 .articlecolumn {float: left;
 	max-width: 85ch;
@@ -132,9 +133,8 @@ button:hover{cursor:pointer;}
 	margin: 1%;
 	padding-bottom: 8px;
 	background-size: cover;
-	background-position: center;
-	color: #000000;}
-.articlecolumn a {width: 85%; padding: 6px 6px; display:inline-block;}
+	background-position: center;}
+.articlecolumn a {width: 75%; padding: 10px 0; display:inline-block;}
 .featuredarticle h3, .articlecolumn h3 {font-size: 120%; margin: 3%;}
 .articlecolumn p {padding: 0 5px;}
 /*Article*/
@@ -144,7 +144,7 @@ article img {width: 50%; display: block;}
 .imgdescription{text-align: center;}
 .linkbutton {margin: 0 15%;
 	display: block;
-	padding: 8px 16px;
+	padding: 10px;
 	text-align: center;}
 aside {width: 29%;
 	position: -webkit-sticky; /*Safari 12 and older*/
@@ -179,7 +179,6 @@ aside h2 {margin: 2%; text-decoration: underline;}
 .contact-form input[type="submit"] {min-width: fit-content;
 	width: 50%;
 	padding: 15px;
-	text-decoration: underline;
 	font-size: 110%;
 	display: block;
 	margin:auto auto 5px auto;
@@ -189,18 +188,20 @@ aside h2 {margin: 2%; text-decoration: underline;}
 	color: #ffffff;
 	box-shadow: 0 4px 10px 0 #ff0000;}
 /*Footer*/
-footer {background: linear-gradient(#333333, #000000);
-	color: #007BFF;
+footer {
+	color: #ffffff;
 	bottom: 0;
 	left: 0;
 	text-align: center;
 	margin-top: 5px;
-	font-size: 110%;}
+	font-size: 116%;
+	display: inline-block;
+	width: 100%;
+	overflow:clip;}
 footer p {display:inline-block; font-weight: bold;}
-footer a {margin: 1% auto;
-	width: 48%;
-	padding: 10px 0;
-	display:inline-block;}
+footer a {margin: auto;
+	width: 49%;
+	padding: 14.5px 0;}
 .footertext, .footerbuttons {width: 49%; display: inline-flex;}
 /*Table*/
 table {width: fit-content;
@@ -221,7 +222,7 @@ th {background-color: #000000; color: #ffffff;}
 @media screen and (max-width: 900px) {
 	.nav a:not(:first-child) {display: none;}
 	.nav a {padding: 16px 0; width: 100%;}
-	.nav.responsive a, .nav.responsive button {display: block; text-align: left; text-indent: 2%;}
+	.nav.responsive a, .nav.responsive button {display: block; text-align: left; text-indent: 4%;}
 	.nav button.icon {display: block; text-align: center;}
 	header.responsive {position: fixed;
 		width: 100%;
@@ -253,7 +254,6 @@ th {background-color: #000000; color: #ffffff;}
 		float: none;}
 	.linkbutton, .contact-form input[type="submit"], .articlecolumn a {font-weight: bold; font-size: 110%; padding: 10px;}
 	.contact-form input[type="text"],.contact-form input[type="email"],.contact-form textarea {width: 95%; padding: 2%; font-size: 110%;}}
-@media screen and (min-width: 901px) {.asidefooter {padding-left: 29%;}}
 @media screen and (max-width: 1200px) {.nav a {padding: 16px 0;}
 	nav {width: 100%; padding: 0;}}
 /*Aside hidden on small screens*/
@@ -284,18 +284,15 @@ th {background-color: #000000; color: #ffffff;}
 	.contact-form input[type="submit"]{width: 85%;}}
 @media screen and (max-width: 450px) {p {font-size: 105%;}
 	header{font-size: 120%; overflow: hidden;}
-	.featuredarticle, .articlecolumn {margin: 2%; min-width: 98%;}
-	/*Makes Footer smaller*/
-	.footertext, .footerbuttons {width: 100%;}}
+	.featuredarticle, .articlecolumn {margin: 2%; min-width: 98%;}}
 .linkblackwhite {color: #000000; font-weight: bold;}
 .linkwhite {color: #ffffff; font-weight: bold;}
 /*Dark Mode*/
-@media (prefers-color-scheme: dark) {body {background: #000000; color: #ffffff;}
+@media (prefers-color-scheme: dark){
 	.linkblack,.linkblackwhite {color: #ffffff;}
-	.nav a, .nav button, footer a {color: #ffffff; background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);}
-	.articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{color: #ffffff; background: linear-gradient(#5b5b5b, #3e3e3e, #1f1f1f);}
-	.contact-form {background: linear-gradient(#333333, #111111); color: #ffffff;}
-	.featuredarticle, .articlecolumn {background: linear-gradient(#333333, #111111);}
+	nav, footer{background-color: rgba(0, 0, 0, 0.3);}
+	.nav a, .nav button, footer a, .featuredarticle, .articlecolumn, .contact-form{color:#ffffff; background: rgba(0, 0, 0, 0.7);}
+	.articlecolumn a:hover, button:hover, .linkbutton:hover, .contact-form input[type="submit"]:hover, .sitemap a:hover, .modal .close-button:hover, .articlecolumn a:hover{color: #ffffff; background: rgba(0, 0, 0, 0.8);}
 	th, td {border-bottom: #ffffff;}
 	th {background-color: #ffffff; color: #000000;}
 	article{background-color: #000000; color: #ffffff;}
