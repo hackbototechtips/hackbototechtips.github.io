@@ -17,19 +17,23 @@ function navHamburger() {
 function updateAsideHeight() {
 	const header = document.querySelector('header');
 	const nav = document.querySelector('nav');
+	const footer = document.querySelector('footer'); // New line
 	const aside = document.querySelector('aside');
 	if (!aside) {
 		return;
 	}
 	const headerHeight = header ? header.offsetHeight : 0;
 	const navHeight = nav ? nav.offsetHeight : 0;
+	const footerHeight = footer ? footer.offsetHeight : 0; // New line
 	const totalHeight = headerHeight + navHeight;
-	const availableHeight = window.innerHeight - totalHeight;
+	const availableHeight = window.innerHeight - totalHeight - footerHeight; // Updated line
 	aside.style.top = `${totalHeight}px`;
 	aside.style.height = `${availableHeight}px`;
-	}
-	window.addEventListener('resize', updateAsideHeight);
-	window.addEventListener('load', updateAsideHeight);
+}
+
+window.addEventListener('resize', updateAsideHeight);
+window.addEventListener('load', updateAsideHeight);
+
 document.addEventListener('DOMContentLoaded', function() {
 	//Target <img> elements
 	const images = document.getElementsByTagName('img');
