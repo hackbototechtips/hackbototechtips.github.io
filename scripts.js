@@ -17,58 +17,47 @@ function navHamburger() {
 function updateAsideHeight() {
 	const header = document.querySelector('header');
 	const nav = document.querySelector('nav');
-	const footer = document.querySelector('footer'); // New line
+	const footer = document.querySelector('footer');
 	const aside = document.querySelector('aside');
 	if (!aside) {
 		return;
 	}
 	const headerHeight = header ? header.offsetHeight : 0;
 	const navHeight = nav ? nav.offsetHeight : 0;
-	const footerHeight = footer ? footer.offsetHeight : 0; // New line
+	const footerHeight = footer ? footer.offsetHeight : 0;
 	const totalHeight = headerHeight + navHeight;
-	const availableHeight = window.innerHeight - totalHeight - footerHeight; // Updated line
+	const availableHeight = window.innerHeight - totalHeight - footerHeight;
 	aside.style.top = `${totalHeight}px`;
 	aside.style.height = `${availableHeight}px`;
 }
-
 window.addEventListener('resize', updateAsideHeight);
 window.addEventListener('load', updateAsideHeight);
-
 document.addEventListener('DOMContentLoaded', function() {
 	//Target <img> elements
 	const images = document.getElementsByTagName('img');
 	//Event listener for <img> elements
 	Array.from(images).forEach(function(image) {
 		image.addEventListener('click', function() {
-			enlargeImage(image);
+		enlargeImage(image);
 		});
 	});
 	//Enlage img
 	function enlargeImage(imageElement) {
-		const enlargedSrc = imageElement.src; //Fetch img source
-		//Add modal for img
-		const modal = document.createElement('div');
-		modal.classList.add('modal'); //Add 'modal' class
-		const enlargedImage = document.createElement('img');
-		enlargedImage.src = enlargedSrc;
-		enlargedImage.classList.add('enlarged-image'); //Add 'enlarged-image' class
-		//Add close button
-		const closeButton = document.createElement('button');
-		closeButton.textContent = 'X';
-		closeButton.classList.add('close-button');
-		closeButton.addEventListener('click', function() {
-			//Remove modal from DOM
-			setTimeout(function() {
-				modal.remove();
-				//Show original image
-				imageElement.style.opacity = '1';
-			});
+	const enlargedSrc = imageElement.src;
+	const modal = document.createElement('div');
+	modal.classList.add('modal');
+	const enlargedImage = document.createElement('img');
+	enlargedImage.src = enlargedSrc;
+	enlargedImage.classList.add('enlarged-image');
+	// Click to close
+	modal.addEventListener('click', function () {
+		setTimeout(function () {
+			modal.remove();
+			imageElement.style.opacity = '1';
 		});
-		modal.appendChild(enlargedImage);
-		modal.appendChild(closeButton); //Close button
-		//Append the modal to the body
-		document.body.appendChild(modal);
-		//Hide original img
-		imageElement.style.opacity = '0';
-	}
+	});
+	modal.appendChild(enlargedImage);
+	document.body.appendChild(modal);
+	imageElement.style.opacity = '0';
+}
 });
