@@ -100,7 +100,6 @@ button:hover{cursor:pointer;}
 /*Blue buttons*/
  .sitemap a, .linkbutton, .contact-form input[type="submit"], .articlecolumn a, footer a{color: #fff; border: 1px solid rgba(255, 255, 255, 0.5);
 	background: rgba(0, 0, 0, 0.3);
-	backdrop-filter: blur(6px);
 	filter: drop-shadow(10px 10px 10px #000) brightness(115%);
 	transition: all 0.2s ease;}
 /*Button hover*/
